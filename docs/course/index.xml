@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Management Training</title>
-    <link>https://wbdatamgmt.github.io/</link>
-    <description>Recent content on Data Management Training</description>
+    <title>Courses on Data Management Training</title>
+    <link>https://wbdatamgmt.github.io/course/</link>
+    <description>Recent content in Courses on Data Management Training</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 06 Jun 2023 12:45:31 +0530</lastBuildDate><atom:link href="https://wbdatamgmt.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jun 2023 12:45:31 +0530</lastBuildDate><atom:link href="https://wbdatamgmt.github.io/course/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Excel Functions</title>
       <link>https://wbdatamgmt.github.io/course/advanced-excel/</link>
@@ -55,15 +55,6 @@ Components 🔗 Introduction to Data Visualization: In this video, the participa
       <guid>https://wbdatamgmt.github.io/course/intro-to-excel/</guid>
       <description>In this course, the participants will learn the basics of Excel, including how to navigate the interface, create and format spreadsheets, enter and format data, and adjust column widths and row heights. They will also become familiar with basic mathematical functions such as SUM, AVERAGE, COUNT, and MAX/MIN.
 Components 🔗 Introduction to Excel: This video will provide an overview of what Excel is, what it can be used for, and what the interface looks like.</description>
-    </item>
-    
-    <item>
-      <title>Excel Formulas Reference Sheet</title>
-      <link>https://wbdatamgmt.github.io/excel-reference/</link>
-      <pubDate>Tue, 06 Jun 2023 12:15:31 +0530</pubDate>
-      
-      <guid>https://wbdatamgmt.github.io/excel-reference/</guid>
-      <description>Arithmetic Formulas 🔗 Addition: =A1 + B1 Subtraction: =A1 - B1 Multiplication: =A1 * B1 Division: =A1 / B1 ROUND: =ROUND(A1, 2) (Rounds the value in cell A1 to 2 decimal places) Common Functions 🔗 SUM: =SUM(A1:A5) (Adds the values in cells A1 to A5) AVERAGE: =AVERAGE(A1:A5) (Calculates the average of values in cells A1 to A5) COUNT: =COUNT(A1:A5) (Counts the number of cells with values in the range A1 to A5) MAX: =MAX(A1:A5) (Returns the maximum value in the range A1 to A5) MIN: =MIN(A1:A5) (Returns the minimum value in the range A1 to A5) Text Functions 🔗 CONCATENATE: =CONCATENATE(A1, &amp;quot; &amp;quot;, B1) (Joins the text in cells A1 and B1 with a space in between) UPPER: =UPPER(A1) (Converts the text in cell A1 to uppercase) LOWER: =LOWER(A1) (Converts the text in cell A1 to lowercase) PROPER: =PROPER(A1) (Capitalizes the first letter of each word in the text in cell A1) TRIM: =TRIM(A1) (Removes extra spaces from the text in cell A1) SUBSTITUTE: =SUBSTITUTE(A1, &amp;quot;old&amp;quot;, &amp;quot;new&amp;quot;) (Replaces occurrences of &amp;ldquo;old&amp;rdquo; with &amp;ldquo;new&amp;rdquo; in the text in cell A1) LEN: =LEN(A1) (Returns the number of characters in the text in cell A1) LEFT: =LEFT(A1, 3) (Returns the leftmost 3 characters from the text in cell A1) RIGHT: =RIGHT(A1, 3) (Returns the rightmost 3 characters from the text in cell A1) MID: =MID(A1, 2, 5) (Returns a substring from the text in cell A1, starting from the 2nd character and extracting 5 characters) Logical Formulas 🔗 IF: =IF(A1 &amp;gt; B1, &amp;quot;Yes&amp;quot;, &amp;quot;No&amp;quot;) (Checks if A1 is greater than B1 and returns &amp;ldquo;Yes&amp;rdquo; if true, &amp;ldquo;No&amp;rdquo; if false) AND: =AND(A1 &amp;gt; 5, B1 &amp;lt; 10) (Checks if both A1 is greater than 5 and B1 is less than 10) OR: =OR(A1 &amp;gt; 5, B1 &amp;lt; 10) (Checks if either A1 is greater than 5 or B1 is less than 10) NOT: =NOT(A1 &amp;gt; 5) (Checks if A1 is not greater than 5) COUNTIF: =COUNTIF(A1:A5, &amp;quot;&amp;gt;10&amp;quot;) (Counts the number of cells in the range A1 to A5 that are greater than 10) SUMIF: =SUMIF(A1:A5, &amp;quot;&amp;gt;10&amp;quot;, B1:B5) (Adds the corresponding values in the range B1 to B5 for cells in the range A1 to A5 that are greater than 10) AVERAGEIF: =AVERAGEIF(A1:A5, &amp;quot;&amp;gt;10&amp;quot;, B1:B5) (Calculates the average of values in the range B1 to B5 if the corresponding value in the range A1 to A5 is greater than 10) IFBLANK: =IF(A1=&amp;quot;&amp;quot;, &amp;quot;Blank&amp;quot;, &amp;quot;Not Blank&amp;quot;) (Checks if cell A1 is blank and returns &amp;ldquo;Blank&amp;rdquo; if true, &amp;ldquo;Not Blank&amp;rdquo; if false) Date and Time Functions 🔗 TODAY: =TODAY() (Returns the current date) NOW: =NOW() (Returns the current date and time) DATEDIF: =DATEDIF(A1, B1, &amp;quot;d&amp;quot;) (Calculates the number of days between dates in cells A1 and B1) Lookup and Reference Functions 🔗 VLOOKUP: =VLOOKUP(A1, A2:B10, 2, FALSE) (Searches for a value in column A and returns the corresponding value from column B) HLOOKUP: =HLOOKUP(A1, A2:F5, 3, FALSE) (Searches for a value in row 1 and returns the corresponding value from row 3) INDEX: =INDEX(A1:A10, 3) (Returns the value at the third position in the range A1 to A10) MATCH: =MATCH(A1, A1:A10, 0) (Finds the position of a value in the range A1 to A10) Sort Data 🔗 Filter: Use the filter function to display only specific data based on criteria.</description>
     </item>
     
   </channel>

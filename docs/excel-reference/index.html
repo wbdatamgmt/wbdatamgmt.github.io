@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head>
+    <title>Excel Formulas Reference Sheet | Data Management Training</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Arithmetic Formulas 🔗 Addition: =A1 &#43; B1 Subtraction: =A1 - B1 Multiplication: =A1 * B1 Division: =A1 / B1 ROUND: =ROUND(A1, 2) (Rounds the value in cell A1 to 2 decimal places) Common Functions 🔗 SUM: =SUM(A1:A5) (Adds the values in cells A1 to A5) AVERAGE: =AVERAGE(A1:A5) (Calculates the average of values in cells A1 to A5) COUNT: =COUNT(A1:A5) (Counts the number of cells with values in the range A1 to A5) MAX: =MAX(A1:A5) (Returns the maximum value in the range A1 to A5) MIN: =MIN(A1:A5) (Returns the minimum value in the range A1 to A5) Text Functions 🔗 CONCATENATE: =CONCATENATE(A1, &quot; &quot;, B1) (Joins the text in cells A1 and B1 with a space in between) UPPER: =UPPER(A1) (Converts the text in cell A1 to uppercase) LOWER: =LOWER(A1) (Converts the text in cell A1 to lowercase) PROPER: =PROPER(A1) (Capitalizes the first letter of each word in the text in cell A1) TRIM: =TRIM(A1) (Removes extra spaces from the text in cell A1) SUBSTITUTE: =SUBSTITUTE(A1, &quot;old&quot;, &quot;new&quot;) (Replaces occurrences of &ldquo;old&rdquo; with &ldquo;new&rdquo; in the text in cell A1) LEN: =LEN(A1) (Returns the number of characters in the text in cell A1) LEFT: =LEFT(A1, 3) (Returns the leftmost 3 characters from the text in cell A1) RIGHT: =RIGHT(A1, 3) (Returns the rightmost 3 characters from the text in cell A1) MID: =MID(A1, 2, 5) (Returns a substring from the text in cell A1, starting from the 2nd character and extracting 5 characters) Logical Formulas 🔗 IF: =IF(A1 &gt; B1, &quot;Yes&quot;, &quot;No&quot;) (Checks if A1 is greater than B1 and returns &ldquo;Yes&rdquo; if true, &ldquo;No&rdquo; if false) AND: =AND(A1 &gt; 5, B1 &lt; 10) (Checks if both A1 is greater than 5 and B1 is less than 10) OR: =OR(A1 &gt; 5, B1 &lt; 10) (Checks if either A1 is greater than 5 or B1 is less than 10) NOT: =NOT(A1 &gt; 5) (Checks if A1 is not greater than 5) COUNTIF: =COUNTIF(A1:A5, &quot;&gt;10&quot;) (Counts the number of cells in the range A1 to A5 that are greater than 10) SUMIF: =SUMIF(A1:A5, &quot;&gt;10&quot;, B1:B5) (Adds the corresponding values in the range B1 to B5 for cells in the range A1 to A5 that are greater than 10) AVERAGEIF: =AVERAGEIF(A1:A5, &quot;&gt;10&quot;, B1:B5) (Calculates the average of values in the range B1 to B5 if the corresponding value in the range A1 to A5 is greater than 10) IFBLANK: =IF(A1=&quot;&quot;, &quot;Blank&quot;, &quot;Not Blank&quot;) (Checks if cell A1 is blank and returns &ldquo;Blank&rdquo; if true, &ldquo;Not Blank&rdquo; if false) Date and Time Functions 🔗 TODAY: =TODAY() (Returns the current date) NOW: =NOW() (Returns the current date and time) DATEDIF: =DATEDIF(A1, B1, &quot;d&quot;) (Calculates the number of days between dates in cells A1 and B1) Lookup and Reference Functions 🔗 VLOOKUP: =VLOOKUP(A1, A2:B10, 2, FALSE) (Searches for a value in column A and returns the corresponding value from column B) HLOOKUP: =HLOOKUP(A1, A2:F5, 3, FALSE) (Searches for a value in row 1 and returns the corresponding value from row 3) INDEX: =INDEX(A1:A10, 3) (Returns the value at the third position in the range A1 to A10) MATCH: =MATCH(A1, A1:A10, 0) (Finds the position of a value in the range A1 to A10) Sort Data 🔗 Filter: Use the filter function to display only specific data based on criteria.">
+<meta name="generator" content="Hugo 0.107.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/excel-reference">Excel Reference</a>
+	<div class="dropdown">
+		<button class="dropbtn">Courses</button>
+		<div class="dropdown-content">
+			<a href="/course/intro-to-excel">Introduction to Excel</a>
+			<a href="/course/advanced-excel">Advanced Excel Functions</a>
+			<a href="/course/data-visualisation">Data Visualisation</a>
+			<a href="/course/google-forms">Data Collection with Google Forms</a>
+			<a href="/course/google-sheets">Data Analysis with Google Sheets</a>
+		</div>
+	</div>
+</nav>
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Excel Formulas Reference Sheet</h1>
+
+    <div class="tip">
+        <time datetime="2023-06-06 12:15:31 &#43;0530 IST">Jun 6, 2023</time>
+        
+    </div>
+
+    
+    
+        
+  
+    <aside class="toc">
+      <details>
+          <summary>Table of Contents
+          </summary>
+          <div>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#arithmetic-formulas">Arithmetic Formulas</a></li>
+    <li><a href="#common-functions">Common Functions</a></li>
+    <li><a href="#text-functions">Text Functions</a></li>
+    <li><a href="#logical-formulas">Logical Formulas</a></li>
+    <li><a href="#date-and-time-functions">Date and Time Functions</a></li>
+    <li><a href="#lookup-and-reference-functions">Lookup and Reference Functions</a></li>
+    <li><a href="#sort-data">Sort Data</a></li>
+    <li><a href="#miscellaneous-functions">Miscellaneous Functions</a></li>
+  </ul>
+</nav>
+          </div>
+      </details>
+    </aside>
+  
+
+
+    
+
+
+    <div class="content">
+      <h2 id="arithmetic-formulas">Arithmetic Formulas <a href="#arithmetic-formulas" class="anchor">🔗</a></h2><ul>
+<li><strong>Addition:</strong> <code>=A1 + B1</code></li>
+<li><strong>Subtraction:</strong> <code>=A1 - B1</code></li>
+<li><strong>Multiplication:</strong> <code>=A1 * B1</code></li>
+<li><strong>Division:</strong> <code>=A1 / B1</code></li>
+<li><strong>ROUND:</strong> <code>=ROUND(A1, 2)</code> (Rounds the value in cell A1 to 2 decimal places)</li>
+</ul>
+<h2 id="common-functions">Common Functions <a href="#common-functions" class="anchor">🔗</a></h2><ul>
+<li><strong>SUM:</strong> <code>=SUM(A1:A5)</code> (Adds the values in cells A1 to A5)</li>
+<li><strong>AVERAGE:</strong> <code>=AVERAGE(A1:A5)</code> (Calculates the average of values in cells A1 to A5)</li>
+<li><strong>COUNT:</strong> <code>=COUNT(A1:A5)</code> (Counts the number of cells with values in the range A1 to A5)</li>
+<li><strong>MAX:</strong> <code>=MAX(A1:A5)</code> (Returns the maximum value in the range A1 to A5)</li>
+<li><strong>MIN:</strong> <code>=MIN(A1:A5)</code> (Returns the minimum value in the range A1 to A5)</li>
+</ul>
+<h2 id="text-functions">Text Functions <a href="#text-functions" class="anchor">🔗</a></h2><ul>
+<li><strong>CONCATENATE:</strong> <code>=CONCATENATE(A1, &quot; &quot;, B1)</code> (Joins the text in cells A1 and B1 with a space in between)</li>
+<li><strong>UPPER:</strong> <code>=UPPER(A1)</code> (Converts the text in cell A1 to uppercase)</li>
+<li><strong>LOWER:</strong> <code>=LOWER(A1)</code> (Converts the text in cell A1 to lowercase)</li>
+<li><strong>PROPER:</strong> <code>=PROPER(A1)</code> (Capitalizes the first letter of each word in the text in cell A1)</li>
+<li><strong>TRIM:</strong> <code>=TRIM(A1)</code> (Removes extra spaces from the text in cell A1)</li>
+<li><strong>SUBSTITUTE:</strong> <code>=SUBSTITUTE(A1, &quot;old&quot;, &quot;new&quot;)</code> (Replaces occurrences of &ldquo;old&rdquo; with &ldquo;new&rdquo; in the text in cell A1)</li>
+<li><strong>LEN:</strong> <code>=LEN(A1)</code> (Returns the number of characters in the text in cell A1)</li>
+<li><strong>LEFT:</strong> <code>=LEFT(A1, 3)</code> (Returns the leftmost 3 characters from the text in cell A1)</li>
+<li><strong>RIGHT:</strong> <code>=RIGHT(A1, 3)</code> (Returns the rightmost 3 characters from the text in cell A1)</li>
+<li><strong>MID:</strong> <code>=MID(A1, 2, 5)</code> (Returns a substring from the text in cell A1, starting from the 2nd character and extracting 5 characters)</li>
+</ul>
+<h2 id="logical-formulas">Logical Formulas <a href="#logical-formulas" class="anchor">🔗</a></h2><ul>
+<li><strong>IF:</strong> <code>=IF(A1 &gt; B1, &quot;Yes&quot;, &quot;No&quot;)</code> (Checks if A1 is greater than B1 and returns &ldquo;Yes&rdquo; if true, &ldquo;No&rdquo; if false)</li>
+<li><strong>AND:</strong> <code>=AND(A1 &gt; 5, B1 &lt; 10)</code> (Checks if both A1 is greater than 5 and B1 is less than 10)</li>
+<li><strong>OR:</strong> <code>=OR(A1 &gt; 5, B1 &lt; 10)</code> (Checks if either A1 is greater than 5 or B1 is less than 10)</li>
+<li><strong>NOT:</strong> <code>=NOT(A1 &gt; 5)</code> (Checks if A1 is not greater than 5)</li>
+<li><strong>COUNTIF:</strong> <code>=COUNTIF(A1:A5, &quot;&gt;10&quot;)</code> (Counts the number of cells in the range A1 to A5 that are greater than 10)</li>
+<li><strong>SUMIF:</strong> <code>=SUMIF(A1:A5, &quot;&gt;10&quot;, B1:B5)</code> (Adds the corresponding values in the range B1 to B5 for cells in the range A1 to A5 that are greater than 10)</li>
+<li><strong>AVERAGEIF:</strong> <code>=AVERAGEIF(A1:A5, &quot;&gt;10&quot;, B1:B5)</code> (Calculates the average of values in the range B1 to B5 if the corresponding value in the range A1 to A5 is greater than 10)</li>
+<li><strong>IFBLANK:</strong> <code>=IF(A1=&quot;&quot;, &quot;Blank&quot;, &quot;Not Blank&quot;)</code> (Checks if cell A1 is blank and returns &ldquo;Blank&rdquo; if true, &ldquo;Not Blank&rdquo; if false)</li>
+</ul>
+<h2 id="date-and-time-functions">Date and Time Functions <a href="#date-and-time-functions" class="anchor">🔗</a></h2><ul>
+<li><strong>TODAY:</strong> <code>=TODAY()</code> (Returns the current date)</li>
+<li><strong>NOW:</strong> <code>=NOW()</code> (Returns the current date and time)</li>
+<li><strong>DATEDIF:</strong> <code>=DATEDIF(A1, B1, &quot;d&quot;)</code> (Calculates the number of days between dates in cells A1 and B1)</li>
+</ul>
+<h2 id="lookup-and-reference-functions">Lookup and Reference Functions <a href="#lookup-and-reference-functions" class="anchor">🔗</a></h2><ul>
+<li><strong>VLOOKUP:</strong> <code>=VLOOKUP(A1, A2:B10, 2, FALSE)</code> (Searches for a value in column A and returns the corresponding value from column B)</li>
+<li><strong>HLOOKUP:</strong> <code>=HLOOKUP(A1, A2:F5, 3, FALSE)</code> (Searches for a value in row 1 and returns the corresponding value from row 3)</li>
+<li><strong>INDEX:</strong> <code>=INDEX(A1:A10, 3)</code> (Returns the value at the third position in the range A1 to A10)</li>
+<li><strong>MATCH:</strong> <code>=MATCH(A1, A1:A10, 0)</code> (Finds the position of a value in the range A1 to A10)</li>
+</ul>
+<h2 id="sort-data">Sort Data <a href="#sort-data" class="anchor">🔗</a></h2><ol>
+<li>
+<p><strong>Filter:</strong> Use the filter function to display only specific data based on criteria.</p>
+<ul>
+<li>Select the range of data you want to filter.</li>
+<li>Go to the Data tab and click on the Filter button.</li>
+<li>Click on the filter dropdown arrows to select and display specific data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sort:</strong> Arrange data in a specific order based on one or more columns.</p>
+<ul>
+<li>Select the range of data you want to sort.</li>
+<li>Go to the Data tab and click on the Sort button.</li>
+<li>Choose the column(s) you want to sort by and specify the sorting order (ascending or descending).</li>
+</ul>
+</li>
+<li>
+<p><strong>Custom Sort:</strong> Sort data based on custom criteria.</p>
+<ul>
+<li>Select the range of data you want to sort.</li>
+<li>Go to the Data tab and click on the Sort button.</li>
+<li>In the Sort dialog box, click on the <strong>Add Level</strong> button to add additional sorting criteria.</li>
+<li>Specify the column(s) and sorting order for each level.</li>
+</ul>
+</li>
+</ol>
+<h2 id="miscellaneous-functions">Miscellaneous Functions <a href="#miscellaneous-functions" class="anchor">🔗</a></h2><ol>
+<li>
+<p><strong>Text to Columns:</strong> Divide data in a single column into separate columns based on a delimiter.</p>
+<ul>
+<li>Select the range of cells containing the text you want to split.</li>
+<li>Go to the Data tab and click on the Text to Columns button.</li>
+<li>Choose the <strong>Delimited</strong> option and click Next.</li>
+<li>Select the delimiter that separates the data (e.g., comma, space, tab).</li>
+<li>Choose the destination where you want the split data to be placed (e.g., new columns or existing columns).</li>
+<li>Click Finish to split the text into separate columns.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Validation:</strong> Set rules to validate and control data entry in specific cells.</p>
+<ul>
+<li>Select the cell(s) you want to create a rule for.</li>
+<li>Go to the Data tab and click on <strong>Data Validation</strong>.</li>
+<li>Set the validation criteria, such as whole numbers, decimal numbers, dates, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Transpose Data:</strong> Quickly change the orientation of data using the paste option.</p>
+<ul>
+<li>Copy the data you want to transpose.</li>
+<li>Right-click on the cell where you want to paste the transposed data.</li>
+<li>Choose the <strong>Transpose</strong> option under <strong>Paste Options</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Multi-Sheet Formatting:</strong> To format multiple sheets simultaneously:</p>
+</li>
+</ol>
+<ul>
+<li>Press <strong>CTRL + Click</strong> on each sheet&rsquo;s tab that you want to format together.</li>
+<li>Make your formatting changes in one sheet, and they will be reflected in all the selected sheets.</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>
