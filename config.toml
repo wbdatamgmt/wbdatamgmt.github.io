@@ -1,0 +1,4 @@
+baseURL = 'https://wbdatamgmt.github.io/'
+languageCode = 'en-uk'
+title = 'Data Management Training'
+theme = 'mini'
