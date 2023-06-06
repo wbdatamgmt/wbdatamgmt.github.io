@@ -132,6 +132,7 @@ pre code {
 /* navigation */
 
 nav.navigation {
+  display: flex;
   padding: 20px 20px 0;
   background: #fff;
   background: rgba(255, 255, 255, 0.9);
@@ -140,7 +141,9 @@ nav.navigation {
   z-index: 100;
 }
 
-nav.navigation a {
+nav.navigation a,
+dropdown-content a,
+.dropbtn {
   top: 8px;
   right: 6px;
   padding: 8px 12px;
@@ -149,11 +152,13 @@ nav.navigation a {
   line-height: 1.35;
   border-radius: 3px;
 }
-nav.navigation a:hover {
+nav.navigation a:hover,
+dropdown-content a:hover {
   color: #0366d6;
 }
 
-nav.navigation a.button {
+nav.navigation a.button,
+dropdown-content a.button {
   background: #5badf0;
   color: #fff;
   margin-left: 12px;
@@ -167,7 +172,9 @@ nav.navigation a.button {
     text-align: right;
     z-index: 100;
   }
-  nav.navigation a {
+  nav.navigation a,
+  dropdown-content a,
+  .dropbtn {
     top: 8px;
     right: 6px;
     padding: 8px 8px;
@@ -531,4 +538,37 @@ nav.navigation a.button {
   position: relative;
   top: 1px;
   color: #bbb;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
