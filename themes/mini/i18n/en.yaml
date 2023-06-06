@@ -48,3 +48,24 @@ poweredBy:
 
 publishDateShort:
   other: '{{ .PublishDate.Format "Jan 2" }}'
+
+excelReference:
+  other: "Excel Reference"
+
+courses:
+  other: "Courses"
+
+introToExcel:
+  other: "Introduction to Excel"
+
+advancedExcel:
+  other: "Advanced Excel Functions"
+
+dataVisualisation:
+  other: "Data Visualisation"
+
+googleForms:
+  other: "Data Collection with Google Forms"
+
+googleSheets:
+  other: "Data Analysis with Google Sheets"
