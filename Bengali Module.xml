@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC7C99NOxtJWm7nbt4Kh4eFA"/>
+ <id>yt:channel:7C99NOxtJWm7nbt4Kh4eFA</id>
+ <yt:channelId>7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+ <title>Data Management Training</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA"/>
+ <author>
+  <name>Data Management Training</name>
+  <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+ </author>
+ <published>2023-06-23T08:23:09+00:00</published>
+ <entry>
+  <id>yt:video:o2_497zIyPk</id>
+  <yt:videoId>o2_497zIyPk</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 5 - 3 - Collaborating on Google Sheets</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=o2_497zIyPk"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T12:25:24+00:00</published>
+  <updated>2026-05-20T22:13:01+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 5 - 3 - Collaborating on Google Sheets</media:title>
+   <media:content url="https://www.youtube.com/v/o2_497zIyPk?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/o2_497zIyPk/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the last video in Module 5 - Data Analysis with Google Sheets.
+
+This video will provide demonstrate how to use the sharing and collaboration features of Google Sheets. It will focus on the Protect Sheets and Ranges feature.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="67"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:w9iZ0n61Dus</id>
+  <yt:videoId>w9iZ0n61Dus</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 5 - 2 - Formulas and Pivot Tables in Google Sheets</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=w9iZ0n61Dus"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T12:25:01+00:00</published>
+  <updated>2026-05-21T02:25:47+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 5 - 2 - Formulas and Pivot Tables in Google Sheets</media:title>
+   <media:content url="https://www.youtube.com/v/w9iZ0n61Dus?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/w9iZ0n61Dus/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the second video in Module 5 - Data Analysis with Google Sheets.
+
+This video will show how to use formulas and pivot tables in Google Sheets. It will demonstrate the minor interface differences and some additional formulas with respect to Microsoft Excel.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="80"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:60aqmh_dDoo</id>
+  <yt:videoId>60aqmh_dDoo</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 5 - 1 - Introduction to Google Sheets</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=60aqmh_dDoo"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T11:34:48+00:00</published>
+  <updated>2026-05-05T08:12:00+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 5 - 1 - Introduction to Google Sheets</media:title>
+   <media:content url="https://www.youtube.com/v/60aqmh_dDoo?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/60aqmh_dDoo/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the first video in Module 5 - Data Analysis with Google Sheets.
+
+This video will provide an overview of what Google Sheets is, how it is similar to Microsoft Excel, and what additional features it provides.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="81"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:8GE7GgFqGUw</id>
+  <yt:videoId>8GE7GgFqGUw</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 4 - 5 - Responses, Quizzes and Settings</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=8GE7GgFqGUw"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T10:47:14+00:00</published>
+  <updated>2026-05-21T18:29:12+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 4 - 5 - Responses, Quizzes and Settings</media:title>
+   <media:content url="https://www.youtube.com/v/8GE7GgFqGUw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/8GE7GgFqGUw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the last video in Module 4 - Data Collection with Google Forms.
+
+This video shows how to view responses in a Google Form. It also shows how to create a Quiz using a Google Form and covers other Settings.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="91"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:nsQqiJo8wpo</id>
+  <yt:videoId>nsQqiJo8wpo</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 4 - 4 - Advanced Question Types in Google Forms</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=nsQqiJo8wpo"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T10:46:51+00:00</published>
+  <updated>2026-04-29T20:02:49+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 4 - 4 - Advanced Question Types in Google Forms</media:title>
+   <media:content url="https://www.youtube.com/v/nsQqiJo8wpo?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/nsQqiJo8wpo/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the fourth video in Module 4 - Data Collection with Google Forms.
+
+This video shows how to use the Multi-Choice Grid, Tick Box Grid and Linear Scale question types in a Google Form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="90"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:6esHW741M0I</id>
+  <yt:videoId>6esHW741M0I</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 4 - 3 - Adding Images and Videos</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=6esHW741M0I"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T10:46:25+00:00</published>
+  <updated>2025-06-09T01:23:51+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 4 - 3 - Adding Images and Videos</media:title>
+   <media:content url="https://www.youtube.com/v/6esHW741M0I?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/6esHW741M0I/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the third video in Module 4 - Data Collection with Google Forms.
+
+This video shows how to add images and videos to a Google Form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="70"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:oviD_OXukgo</id>
+  <yt:videoId>oviD_OXukgo</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 4 - 2 - Introduction to Google Forms (Part 2)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=oviD_OXukgo"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T10:46:01+00:00</published>
+  <updated>2026-04-30T01:53:42+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 4 - 2 - Introduction to Google Forms (Part 2)</media:title>
+   <media:content url="https://www.youtube.com/v/oviD_OXukgo?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/oviD_OXukgo/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the second part of the first video in Module 4 - Data Collection with Google Forms.
+
+This video will show how the form preview can be used when creating a new Google Form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="75"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:9lVJOakmF2o</id>
+  <yt:videoId>9lVJOakmF2o</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Bengali - Module 4 - 1 - Introduction to Google Forms (Part 1)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=9lVJOakmF2o"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-08-17T10:45:32+00:00</published>
+  <updated>2026-05-05T04:19:44+00:00</updated>
+  <media:group>
+   <media:title>Bengali - Module 4 - 1 - Introduction to Google Forms (Part 1)</media:title>
+   <media:content url="https://www.youtube.com/v/9lVJOakmF2o?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/9lVJOakmF2o/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the first video in Module 4 - Data Collection with Google Forms.
+
+This video will provide an overview of what Google Forms is and covers all the basic aspects of creating a new form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="129"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:t7RMTxH5S_g</id>
+  <yt:videoId>t7RMTxH5S_g</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 4 - 4 - Advanced Question Types in Google Forms</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=t7RMTxH5S_g"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:55:51+00:00</published>
+  <updated>2025-06-10T13:31:39+00:00</updated>
+  <media:group>
+   <media:title>Module 4 - 4 - Advanced Question Types in Google Forms</media:title>
+   <media:content url="https://www.youtube.com/v/t7RMTxH5S_g?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/t7RMTxH5S_g/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the fourth video in Module 4 - Data Collection with Google Forms.
+
+This video shows how to use the Multi-Choice Grid, Tick Box Grid and Linear Scale question types in a Google Form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="142"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:oVfYk2pcbz8</id>
+  <yt:videoId>oVfYk2pcbz8</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 4 - 5 - Responses, Quizzes and Settings</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=oVfYk2pcbz8"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:55:31+00:00</published>
+  <updated>2026-04-23T01:03:08+00:00</updated>
+  <media:group>
+   <media:title>Module 4 - 5 - Responses, Quizzes and Settings</media:title>
+   <media:content url="https://www.youtube.com/v/oVfYk2pcbz8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/oVfYk2pcbz8/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the last video in Module 4 - Data Collection with Google Forms.
+
+This video shows how to view responses in a Google Form. It also shows how to create a Quiz using a Google Form and covers other Settings.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="151"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:4Ky3L47kpGE</id>
+  <yt:videoId>4Ky3L47kpGE</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 4 - 3 - Adding Images and Videos</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=4Ky3L47kpGE"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:51:03+00:00</published>
+  <updated>2025-06-14T05:09:44+00:00</updated>
+  <media:group>
+   <media:title>Module 4 - 3 - Adding Images and Videos</media:title>
+   <media:content url="https://www.youtube.com/v/4Ky3L47kpGE?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/4Ky3L47kpGE/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the third video in Module 4 - Data Collection with Google Forms.
+
+This video shows how to add images and videos to a Google Form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="134"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:umQ8Kv9TBKA</id>
+  <yt:videoId>umQ8Kv9TBKA</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 4 - 2 - Introduction to Google Forms (Part 2)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=umQ8Kv9TBKA"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:50:30+00:00</published>
+  <updated>2026-05-04T23:52:19+00:00</updated>
+  <media:group>
+   <media:title>Module 4 - 2 - Introduction to Google Forms (Part 2)</media:title>
+   <media:content url="https://www.youtube.com/v/umQ8Kv9TBKA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/umQ8Kv9TBKA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the second part of the first video in Module 4 - Data Collection with Google Forms.
+
+This video will show how the form preview can be used when creating a new Google Form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="149"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:ksXMH6Rdpc4</id>
+  <yt:videoId>ksXMH6Rdpc4</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 4 - 1 - Introduction to Google Forms (Part 1)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=ksXMH6Rdpc4"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:49:24+00:00</published>
+  <updated>2026-05-04T17:46:07+00:00</updated>
+  <media:group>
+   <media:title>Module 4 - 1 - Introduction to Google Forms (Part 1)</media:title>
+   <media:content url="https://www.youtube.com/v/ksXMH6Rdpc4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/ksXMH6Rdpc4/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the first video in Module 4 - Data Collection with Google Forms.
+
+This video will provide an overview of what Google Forms is and covers all the basic aspects of creating a new form.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="195"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Eu4RSoJ2yF0</id>
+  <yt:videoId>Eu4RSoJ2yF0</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 5 - 2 - Formulas and Pivot Tables in Google Sheets</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=Eu4RSoJ2yF0"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:19:35+00:00</published>
+  <updated>2026-04-14T23:45:16+00:00</updated>
+  <media:group>
+   <media:title>Module 5 - 2 - Formulas and Pivot Tables in Google Sheets</media:title>
+   <media:content url="https://www.youtube.com/v/Eu4RSoJ2yF0?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/Eu4RSoJ2yF0/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the second video in Module 5 - Data Analysis with Google Sheets.
+
+This video will show how to use formulas and pivot tables in Google Sheets. It will demonstrate the minor interface differences and some additional formulas with respect to Microsoft Excel.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="136"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:nK3VxSvaQTc</id>
+  <yt:videoId>nK3VxSvaQTc</yt:videoId>
+  <yt:channelId>UC7C99NOxtJWm7nbt4Kh4eFA</yt:channelId>
+  <title>Module 5 - 3 - Collaborating on Google Sheets</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=nK3VxSvaQTc"/>
+  <author>
+   <name>Data Management Training</name>
+   <uri>https://www.youtube.com/channel/UC7C99NOxtJWm7nbt4Kh4eFA</uri>
+  </author>
+  <published>2024-07-20T12:18:13+00:00</published>
+  <updated>2026-04-29T22:55:48+00:00</updated>
+  <media:group>
+   <media:title>Module 5 - 3 - Collaborating on Google Sheets</media:title>
+   <media:content url="https://www.youtube.com/v/nK3VxSvaQTc?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/nK3VxSvaQTc/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This is the last video in Module 5 - Data Analysis with Google Sheets.
+
+This video will provide demonstrate how to use the sharing and collaboration features of Google Sheets. It will focus on the Protect Sheets and Ranges feature.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="136"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>

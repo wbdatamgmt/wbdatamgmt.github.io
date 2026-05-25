@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wbdatamgmt.github.io/course/advanced-excel/</loc>
+    <loc>http://localhost:1313/course/advanced-excel/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/course/</loc>
+    <loc>http://localhost:1313/course/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/course/google-sheets/</loc>
+    <loc>http://localhost:1313/course/google-sheets/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/course/google-forms/</loc>
+    <loc>http://localhost:1313/course/google-forms/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/course/data-visualisation/</loc>
+    <loc>http://localhost:1313/course/data-visualisation/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/course/intro-to-excel/</loc>
+    <loc>http://localhost:1313/course/intro-to-excel/</loc>
     <lastmod>2023-06-06T12:45:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/excel-reference/</loc>
+    <loc>http://localhost:1313/excel-reference/</loc>
     <lastmod>2023-06-06T12:15:31+05:30</lastmod>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://wbdatamgmt.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
