@@ -1,8 +1,25 @@
 <footer class="site-footer">
+  {{ $current := .RelPermalink }}
+  {{ $isBangla := hasPrefix $current "/bangla-course/" }}
+  {{ $prefix := cond $isBangla "/bangla-course" "/course" }}
+
+  <nav class="footer-modules" aria-label="Modules">
+    <h3 class="footer-modules-heading">{{ i18n "modules" }}</h3>
+    <div class="footer-modules-links">
+      <a href="{{ printf "%s/intro-to-excel/" $prefix | relURL }}">{{ i18n "introToExcel" }}</a>
+      <a href="{{ printf "%s/advanced-excel/" $prefix | relURL }}">{{ i18n "advancedExcel" }}</a>
+      <a href="{{ printf "%s/data-visualisation/" $prefix | relURL }}">{{ i18n "dataVisualisation" }}</a>
+      <a href="{{ printf "%s/google-forms/" $prefix | relURL }}">{{ i18n "googleForms" }}</a>
+      <a href="{{ printf "%s/google-sheets/" $prefix | relURL }}">{{ i18n "googleSheets" }}</a>
+    </div>
+  </nav>
+
+  <hr style="max-width: 30%; margin-left: auto; margin-right: auto;"/>
+
   <div class="content-wrap">
     &copy; {{ now.Format "2006" }} {{ .Site.Title }}
   </div>
   <div class="content-wrap">
-    School Education Department, Government of West Bengal with support from UNICEF
+    School Education Department, Government of West Bengal with technical support from UNICEF
   </div>
 </footer>
