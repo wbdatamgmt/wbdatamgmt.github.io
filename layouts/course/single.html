@@ -18,10 +18,10 @@
       <div class="progress-bar" role="progressbar" aria-valuenow="{{ $currentIndex }}" aria-valuemin="1" aria-valuemax="{{ $total }}" aria-label="Lesson {{ $currentIndex }} of {{ $total }}">
         <div class="progress-fill" style="width: {{ mul (div (float $currentIndex) (float $total)) 100 }}%"></div>
       </div>
+
+  <h1>{{$currentIndex}}. {{ .Title }}</h1>
     {{ end }}
   {{ end }}
-
-  <h1>{{ .Title }}</h1>
 
   {{ if or .Site.Params.showToc .Params.showToc }}
     {{ partial "toc.html" . }}

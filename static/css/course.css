@@ -392,6 +392,23 @@ p {
   line-height: 1.6;
 }
 
+.home {
+  text-align: center;
+  padding: 48px 24px 32px;
+}
+
+.home .text {
+  max-width: 700px;
+  margin: 16px auto 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.home .logo {
+  width: 300px;
+}
+
 /* Module cards */
 .modules-grid {
   display: grid;

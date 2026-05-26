@@ -25,7 +25,7 @@
 
   <p class="assessment-intro">This assessment is optional but highly recommended. Answer all questions and click <strong>Submit</strong> to see your score.</p>
 
-  <script type="text/plain" id="assessment-data">{{ .RawContent }}</script>
+  <script type="text/plain" id="assessment-data">{{ .RawContent | safeHTML }}</script>
 
   <form id="assessment-quiz" class="assessment-quiz" novalidate></form>
 

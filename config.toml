@@ -1,5 +1,5 @@
 baseURL = 'https://wbdatamgmt.github.io/'
-languageCode = 'en-uk'
-title = 'Data Management Training'
+languageCode = 'en-in'
+title = 'Basics of Data Management'
 theme = 'mini'
 publishDir = 'docs'

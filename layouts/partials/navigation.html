@@ -11,7 +11,7 @@
       <!-- <a href="{{ "/excel-reference" | relURL }}"{{ if eq .RelPermalink "/excel-reference/" }} class="active"{{ end }}>{{ i18n "excelReference" }}</a> -->
 
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle" aria-haspopup="true">{{ i18n "courses" }}</button>
+        <button class="nav-dropdown-toggle" aria-haspopup="true">{{ i18n "modules" }}</button>
         <div class="nav-dropdown-menu" role="menu">
           {{ $current := .RelPermalink }}
           <a href="{{ "/course/intro-to-excel/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/intro-to-excel" }} class="active"{{ end }}>{{ i18n "introToExcel" }}</a>

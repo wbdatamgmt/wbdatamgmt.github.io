@@ -55,6 +55,9 @@ excelReference:
 courses:
   other: "Courses"
 
+modules:
+  other: "Modules"
+
 introToExcel:
   other: "Introduction to Excel"
 
