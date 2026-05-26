@@ -1,0 +1,38 @@
+home:
+  other: "হোম"
+
+heroTitle:
+  other: "বেসিক ডেটা ম্যানেজমেন্ট"
+
+heroSubtitle:
+  other: "এটি একটি সহজ ভিডিও কোর্স যেখানে MS Excel, Data Visualisation, Google Forms এবং Google Sheets নিয়ে আলোচনা করা হবে।"
+
+heroIntro:
+  other: "আপনি আপনার সুবিধামতো এবং নিজের গতিতে এই কোর্সটি করতে পারেন। ডেটা ম্যানেজমেন্টে আপনি নতুন হোন বা পুরনো, এই কোর্সে আপনার জন্য শেখার কিছু না কিছু অবশ্যই আছে।"
+
+homeAttribution:
+  other: "এই কোর্সটি পশ্চিমবঙ্গ স্কুল শিক্ষা বিভাগের দ্বারা এবং তাদের জন্য ডিজাইন করা হয়েছে, ইউনিসেফের প্রযুক্তিগত সহায়তায়।"
+
+moduleLabel:
+  other: "মডিউল"
+
+videosLabel:
+  other: "videos, 1 assignment, 1 quiz"
+
+modules:
+  other: "মডিউল"
+
+introToExcel:
+  other: "Introduction to Excel (বাংলা)"
+
+advancedExcel:
+  other: "Advanced Excel Functions (বাংলা)"
+
+dataVisualisation:
+  other: "Data Visualisation (বাংলা)"
+
+googleForms:
+  other: "Data Collection with Google Forms (বাংলা)"
+
+googleSheets:
+  other: "Data Analysis with Google Sheets (বাংলা)"

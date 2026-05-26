@@ -4,6 +4,7 @@ date: 2023-06-06T12:45:31+05:30
 draft: false
 showToc: false
 type: "course"
+language: "en"
 weight: 7
 ---
 

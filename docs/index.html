@@ -25,17 +25,25 @@
 
     <div class="nav-links">
       
+      
+      
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" aria-haspopup="true">Modules</button>
         <div class="nav-dropdown-menu" role="menu">
-          
           <a href="/course/intro-to-excel/" role="menuitem">Introduction to Excel</a>
           <a href="/course/advanced-excel/" role="menuitem">Advanced Excel Functions</a>
           <a href="/course/data-visualisation/" role="menuitem">Data Visualisation</a>
           <a href="/course/google-forms/" role="menuitem">Data Collection with Google Forms</a>
           <a href="/course/google-sheets/" role="menuitem">Data Analysis with Google Sheets</a>
         </div>
+      </div>
+
+      <div class="nav-lang">
+        
+          <a href="#" class="lang-switch active" data-lang="en" title="English">EN</a>
+          <a href="#" class="lang-switch" data-lang="bn" title="বাংলায় দেখুন">বাং</a>
+        
       </div>
     </div>
   </div>
@@ -45,22 +53,37 @@
     <main class="main" id="main-content">
       
 
-<section class="hero">
+
+
+
+<section class="hero" id="hero-en">
   <img class="logo" alt="WB Govt Logo" src="/WB%20Govt%20Logo.png" />
   <h1>Basics of Data Management</h1>
   <p class="subtitle">A free, self-paced video course covering Excel, data visualisation, Google Forms, and Google Sheets.</p>
-  <p class="intro">Take the courses at your own pace. Designed for people with little or no experience in data management — or those looking to sharpen their skills.</p>
+  <p class="intro">Take the course at your own pace. Designed for people with little or no experience in data management, or those looking to sharpen their skills.</p>
+</section>
+
+<section class="hero lang-hidden" id="hero-bn">
+  <img class="logo" alt="WB Govt Logo" src="/WB%20Govt%20Logo.png" />
+  <h1>বেসিক ডেটা ম্যানেজমেন্ট</h1>
+  <p class="subtitle">এটি একটি সহজ ভিডিও কোর্স যেখানে MS Excel, Data Visualisation, Google Forms এবং Google Sheets নিয়ে আলোচনা করা হবে।</p>
+  <p class="intro">আপনি আপনার সুবিধামতো এবং নিজের গতিতে এই কোর্সটি করতে পারেন। ডেটা ম্যানেজমেন্টে আপনি নতুন হোন বা পুরনো, এই কোর্সে আপনার জন্য শেখার কিছু না কিছু অবশ্যই আছে।</p>
 </section>
 
 <div class="content-wrap">
-  <div class="modules-grid">
+  <div class="lang-tabs" role="tablist">
+    <button class="lang-tab active" role="tab" aria-selected="true" data-lang="en">English</button>
+    <button class="lang-tab" role="tab" aria-selected="false" data-lang="bn">বাংলা</button>
+  </div>
+
+  <div class="modules-grid" id="modules-en">
     
     
       
         <a class="module-card" href="/course/intro-to-excel/">
           <span class="module-number">Module 1</span>
           <h2>Introduction to Excel</h2>
-          <span class="module-meta">12 lessons</span>
+          <span class="module-meta">10 videos, 1 assignment, 1 quiz</span>
           
             <p class="module-desc">The participants will learn the basics of Excel, including how to navigate the interface, create and format spreadsheets, enter and format data, and …</p>
           
@@ -69,7 +92,7 @@
         <a class="module-card" href="/course/advanced-excel/">
           <span class="module-number">Module 2</span>
           <h2>Advanced Excel Functions</h2>
-          <span class="module-meta">8 lessons</span>
+          <span class="module-meta">6 videos, 1 assignment, 1 quiz</span>
           
             <p class="module-desc">The participants will learn advanced Excel functions that will help them manage and analyse data more efficiently. They will learn about VLOOKUP, IF …</p>
           
@@ -78,7 +101,7 @@
         <a class="module-card" href="/course/data-visualisation/">
           <span class="module-number">Module 3</span>
           <h2>Data Visualisation</h2>
-          <span class="module-meta">4 lessons</span>
+          <span class="module-meta">2 videos, 1 assignment, 1 quiz</span>
           
             <p class="module-desc">The participants will learn the basics of data visualisation along with good practices for making effective charts using Excel. They will understand …</p>
           
@@ -87,7 +110,7 @@
         <a class="module-card" href="/course/google-forms/">
           <span class="module-number">Module 4</span>
           <h2>Data Collection with Google Forms</h2>
-          <span class="module-meta">7 lessons</span>
+          <span class="module-meta">5 videos, 1 assignment, 1 quiz</span>
           
             <p class="module-desc">The participants will learn how to create online surveys and quizzes using Google Forms. They will be able to create a new form, add questions and …</p>
           
@@ -96,7 +119,59 @@
         <a class="module-card" href="/course/google-sheets/">
           <span class="module-number">Module 5</span>
           <h2>Data Analysis with Google Sheets</h2>
-          <span class="module-meta">5 lessons</span>
+          <span class="module-meta">3 videos, 1 assignment, 1 quiz</span>
+          
+            <p class="module-desc">The participants will learn how to import data from Google Forms into Google Sheets and perform basic data analysis. They will understand how to sort …</p>
+          
+        </a>
+      
+    
+  </div>
+
+  <div class="modules-grid lang-hidden" id="modules-bn">
+    
+    
+      
+        <a class="module-card" href="/bangla-course/intro-to-excel/">
+          <span class="module-number">মডিউল 1</span>
+          <h2>Introduction to Excel (বাংলা)</h2>
+          <span class="module-meta">10 videos, 1 assignment, 1 quiz</span>
+          
+            <p class="module-desc">The participants will learn the basics of Excel, including how to navigate the interface, create and format spreadsheets, enter and format data, and …</p>
+          
+        </a>
+      
+        <a class="module-card" href="/bangla-course/advanced-excel/">
+          <span class="module-number">মডিউল 2</span>
+          <h2>Advanced Excel Functions (বাংলা)</h2>
+          <span class="module-meta">6 videos, 1 assignment, 1 quiz</span>
+          
+            <p class="module-desc">The participants will learn advanced Excel functions that will help them manage and analyse data more efficiently. They will learn about VLOOKUP, IF …</p>
+          
+        </a>
+      
+        <a class="module-card" href="/bangla-course/data-visualisation/">
+          <span class="module-number">মডিউল 3</span>
+          <h2>Data Visualisation (বাংলা)</h2>
+          <span class="module-meta">2 videos, 1 assignment, 1 quiz</span>
+          
+            <p class="module-desc">The participants will learn the basics of data visualisation along with good practices for making effective charts using Excel. They will understand …</p>
+          
+        </a>
+      
+        <a class="module-card" href="/bangla-course/google-forms/">
+          <span class="module-number">মডিউল 4</span>
+          <h2>Data Collection with Google Forms (বাংলা)</h2>
+          <span class="module-meta">5 videos, 1 assignment, 1 quiz</span>
+          
+            <p class="module-desc">The participants will learn how to create online surveys and quizzes using Google Forms. They will be able to create a new form, add questions and …</p>
+          
+        </a>
+      
+        <a class="module-card" href="/bangla-course/google-sheets/">
+          <span class="module-number">মডিউল 5</span>
+          <h2>Data Analysis with Google Sheets (বাংলা)</h2>
+          <span class="module-meta">3 videos, 1 assignment, 1 quiz</span>
           
             <p class="module-desc">The participants will learn how to import data from Google Forms into Google Sheets and perform basic data analysis. They will understand how to sort …</p>
           
@@ -106,10 +181,58 @@
   </div>
 </div>
 
-<section class="home">
+<section class="home" id="home-en">
   <img class="logo" alt="SED UNICEF logos" src="/unicef%20sed%20combined%20logo.png" />
   <p class="text">This course has been designed by and for the West Bengal School Education Department, with technical support from UNICEF.</p>
 </section>
+
+<section class="home lang-hidden" id="home-bn">
+  <img class="logo" alt="SED UNICEF logos" src="/unicef%20sed%20combined%20logo.png" />
+  <p class="text">এই কোর্সটি পশ্চিমবঙ্গ স্কুল শিক্ষা বিভাগের দ্বারা এবং তাদের জন্য ডিজাইন করা হয়েছে, ইউনিসেফের প্রযুক্তিগত সহায়তায়।</p>
+</section>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.lang-tab');
+  var navSwitches = document.querySelectorAll('.lang-switch[data-lang]');
+  var sections = {
+    en: ['hero-en', 'modules-en', 'home-en'],
+    bn: ['hero-bn', 'modules-bn', 'home-bn']
+  };
+
+  function switchLang(lang) {
+    ['en', 'bn'].forEach(function(l) {
+      sections[l].forEach(function(id) {
+        document.getElementById(id).classList.toggle('lang-hidden', l !== lang);
+      });
+    });
+    tabs.forEach(function(t) {
+      var active = t.getAttribute('data-lang') === lang;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active);
+    });
+    navSwitches.forEach(function(s) {
+      s.classList.toggle('active', s.getAttribute('data-lang') === lang);
+    });
+    try { localStorage.setItem('lang', lang); } catch(e) {}
+  }
+
+  tabs.forEach(function(t) {
+    t.addEventListener('click', function() {
+      switchLang(t.getAttribute('data-lang'));
+    });
+  });
+
+  navSwitches.forEach(function(s) {
+    s.addEventListener('click', function(e) {
+      e.preventDefault();
+      switchLang(s.getAttribute('data-lang'));
+    });
+  });
+
+  try { if (localStorage.getItem('lang') === 'bn') switchLang('bn'); } catch(e) {}
+})();
+</script>
 
 
     </main>

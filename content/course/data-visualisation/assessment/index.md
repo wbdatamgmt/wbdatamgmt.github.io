@@ -1,11 +1,12 @@
 ---
-title: "Data Visualisation Assessment"
+title: "Data Visualisation - Quiz"
 date: 2023-06-06T12:45:31+05:30
 draft: false
 showToc: false
 type: "course"
+language: "en"
 layout: "assessment"
-weight: 90
+weight: 92
 ---
 
 1. What is the primary purpose of data visualisation?

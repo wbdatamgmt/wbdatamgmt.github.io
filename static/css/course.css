@@ -1092,6 +1092,80 @@ h4:hover .anchor {
   margin-top: 16px;
 }
 
+/* ---- Language toggle visibility ---- */
+.lang-hidden {
+  display: none !important;
+}
+
+/* ---- Language tabs (home page) ---- */
+.lang-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.lang-tab {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: inherit;
+}
+
+.lang-tab:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.lang-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* ---- Language toggle (nav) ---- */
+.nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 1px solid var(--border);
+}
+
+.lang-switch {
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+a.lang-switch:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.lang-switch.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .nav-lang {
+    border-left: none;
+    margin-left: 0;
+    padding: 8px 12px;
+  }
+}
+
 /* ---- Print styles ---- */
 @media print {
   .site-nav,

@@ -1,0 +1,92 @@
+home:
+  other: Home
+
+archive:
+  other: Archive
+
+tags:
+  other: Tags
+
+about:
+  other: About
+
+subscribe:
+  other: Subscribe
+
+404title:
+  other: 404 - Page Not Found
+
+404subtitle:
+  other: The content you're looking for doesn't seem to exist.
+
+readMore:
+  other: Read more
+
+minuteRead:
+  other: "{{ .ReadingTime }} minute read"
+
+publishDate:
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+
+wordCount:
+  one: "{{ .WordCount }} word"
+  other: "{{ .WordCount }} words"
+
+postsNewer:
+  other: Newer posts
+
+postsOlder:
+  other: Older posts
+
+poweredBy:
+  other: >-
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "Jan 2" }}'
+
+heroTitle:
+  other: "Basics of Data Management"
+
+heroSubtitle:
+  other: "A free, self-paced video course covering Excel, data visualisation, Google Forms, and Google Sheets."
+
+heroIntro:
+  other: "Take the course at your own pace. Designed for people with little or no experience in data management, or those looking to sharpen their skills."
+
+homeAttribution:
+  other: "This course has been designed by and for the West Bengal School Education Department, with technical support from UNICEF."
+
+moduleLabel:
+  other: "Module"
+
+videosLabel:
+  other: "videos, 1 assignment, 1 quiz"
+
+excelReference:
+  other: "Excel Reference"
+
+courses:
+  other: "Courses"
+
+modules:
+  other: "Modules"
+
+introToExcel:
+  other: "Introduction to Excel"
+
+advancedExcel:
+  other: "Advanced Excel Functions"
+
+dataVisualisation:
+  other: "Data Visualisation"
+
+googleForms:
+  other: "Data Collection with Google Forms"
+
+googleSheets:
+  other: "Data Analysis with Google Sheets"

@@ -8,18 +8,32 @@
     </label>
 
     <div class="nav-links">
-      <!-- <a href="{{ "/excel-reference" | relURL }}"{{ if eq .RelPermalink "/excel-reference/" }} class="active"{{ end }}>{{ i18n "excelReference" }}</a> -->
+      {{ $current := .RelPermalink }}
+      {{ $isBangla := hasPrefix $current "/bangla-course/" }}
+      {{ $prefix := cond $isBangla "/bangla-course" "/course" }}
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" aria-haspopup="true">{{ i18n "modules" }}</button>
         <div class="nav-dropdown-menu" role="menu">
-          {{ $current := .RelPermalink }}
-          <a href="{{ "/course/intro-to-excel/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/intro-to-excel" }} class="active"{{ end }}>{{ i18n "introToExcel" }}</a>
-          <a href="{{ "/course/advanced-excel/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/advanced-excel" }} class="active"{{ end }}>{{ i18n "advancedExcel" }}</a>
-          <a href="{{ "/course/data-visualisation/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/data-visualisation" }} class="active"{{ end }}>{{ i18n "dataVisualisation" }}</a>
-          <a href="{{ "/course/google-forms/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/google-forms" }} class="active"{{ end }}>{{ i18n "googleForms" }}</a>
-          <a href="{{ "/course/google-sheets/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/google-sheets" }} class="active"{{ end }}>{{ i18n "googleSheets" }}</a>
+          <a href="{{ printf "%s/intro-to-excel/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/intro-to-excel" $prefix) }} class="active"{{ end }}>{{ i18n "introToExcel" }}</a>
+          <a href="{{ printf "%s/advanced-excel/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/advanced-excel" $prefix) }} class="active"{{ end }}>{{ i18n "advancedExcel" }}</a>
+          <a href="{{ printf "%s/data-visualisation/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/data-visualisation" $prefix) }} class="active"{{ end }}>{{ i18n "dataVisualisation" }}</a>
+          <a href="{{ printf "%s/google-forms/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/google-forms" $prefix) }} class="active"{{ end }}>{{ i18n "googleForms" }}</a>
+          <a href="{{ printf "%s/google-sheets/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/google-sheets" $prefix) }} class="active"{{ end }}>{{ i18n "googleSheets" }}</a>
         </div>
+      </div>
+
+      <div class="nav-lang">
+        {{ if eq $current "/" }}
+          <a href="#" class="lang-switch active" data-lang="en" title="English">EN</a>
+          <a href="#" class="lang-switch" data-lang="bn" title="বাংলায় দেখুন">বাং</a>
+        {{ else if $isBangla }}
+          <a href="{{ replace $current "/bangla-course/" "/course/" | relURL }}" class="lang-switch" title="Switch to English">EN</a>
+          <span class="lang-switch active" title="বাংলা">বাং</span>
+        {{ else }}
+          <span class="lang-switch active" title="English">EN</span>
+          <a href="{{ replace $current "/course/" "/bangla-course/" | relURL }}" class="lang-switch" title="বাংলায় দেখুন">বাং</a>
+        {{ end }}
       </div>
     </div>
   </div>

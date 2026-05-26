@@ -1,11 +1,12 @@
 ---
-title: "Introduction to Excel Assessment"
+title: "Introduction to Excel - Quiz"
 date: 2023-06-06T12:45:31+05:30
 draft: false
 showToc: false
 type: "course"
+language: "en"
 layout: "assessment"
-weight: 90
+weight: 92
 ---
 
 1. Which of the following mathematical functions in Excel calculates the total of a range of cells?

@@ -1,11 +1,12 @@
 ---
-title: "Advanced Excel Functions Assessment"
+title: "Advanced Excel Functions - Quiz"
 date: 2023-06-06T12:45:31+05:30
 draft: false
 showToc: false
 type: "course"
+language: "en"
 layout: "assessment"
-weight: 90
+weight: 92
 ---
 
 1. What does Conditional Formatting in Excel help you achieve?
