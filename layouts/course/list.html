@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section id="single">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div class="tip">
+        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
+    </div>
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    {{ with .Pages.ByWeight }}
+    <section id="archive">
+        <div class="group">
+            <h3 class="key">Pages</h3>
+
+            {{ range . }}
+                <div class="value">
+                  <div class="date">
+                    {{ with .Params.weight }}{{ . }}{{ end }}
+                  </div>
+                  <div class="title">
+                      <a href="{{ .RelPermalink }}">
+                          {{ .Title }}
+                      </a>
+                  </div>
+                </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+</section>
+
+{{ end }}

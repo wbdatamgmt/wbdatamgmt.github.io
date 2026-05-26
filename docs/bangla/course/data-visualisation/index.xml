@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Visualisation on Data Management Training</title>
+    <link>http://localhost:1313/bangla/course/data-visualisation/</link>
+    <description>Recent content in Data Visualisation on Data Management Training</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Tue, 06 Jun 2023 12:45:31 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/bangla/course/data-visualisation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Data Visualization</title>
+      <link>http://localhost:1313/bangla/course/data-visualisation/video-01-introduction-to-data-visualization/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/data-visualisation/video-01-introduction-to-data-visualization/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video introduces the concept of data visualization, why it is important, and the principles of effective data visualization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Good Practices for Data Visualization</title>
+      <link>http://localhost:1313/bangla/course/data-visualisation/video-02-good-practices-for-data-visualization/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/data-visualisation/video-02-good-practices-for-data-visualization/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video covers chart types, choosing the right chart, simplifying charts, using labels and titles well, selecting colour schemes, and avoiding common mistakes such as 3D charts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Visualisation Assessment</title>
+      <link>http://localhost:1313/bangla/course/data-visualisation/assessment/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/data-visualisation/assessment/</guid>
+      <description>&lt;p&gt;This assessment is optional but highly recommended. Javascript-based answer checking will be added later.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What is the primary purpose of data visualisation?&#xA;a. To add more complexity to data&#xA;X. To simplify complex data for easier understanding&#xA;c. To hide important information&#xA;d. To make data confusing&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Which of the below indicate the importance of data visualisation? (Multiple choice)&#xA;a. It enables us to see patterns and trends that might not be apparent from looking at the raw data&#xA;b. It makes data analysis more complicated and time consuming&#xA;X. It enables us to make data-driven decisions based on facts rather than opinions or assumptions&#xA;d. It is only useful for experts in data analysis&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Visualisation Assignment</title>
+      <link>http://localhost:1313/bangla/course/data-visualisation/assignment/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/data-visualisation/assignment/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Go to &lt;a href=&#34;https://dashboard.udiseplus.gov.in/#/reportDashboard/sReport&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://dashboard.udiseplus.gov.in/#/reportDashboard/sReport&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Find and click on the report &amp;ldquo;Number of Schools by Availability of Infrastructure and Facilities, School Management and School Category&amp;rdquo; (report ID: 3013)&lt;/li&gt;&#xA;&lt;li&gt;Select latest year, West Bengal state, and District-wise in the district option&lt;/li&gt;&#xA;&lt;li&gt;Download the data by clicking on the green excel icon on the top right of the report card&lt;/li&gt;&#xA;&lt;li&gt;After downloading the file, open it in MS Excel.&lt;/li&gt;&#xA;&lt;li&gt;Add a filter to the data, as you may have learnt in Module 1.&lt;/li&gt;&#xA;&lt;li&gt;Filter the Location column and get the data for your district only.&lt;/li&gt;&#xA;&lt;li&gt;Filter further the School Management column to get information on Department of Education schools.&lt;/li&gt;&#xA;&lt;li&gt;Select this entire data and paste into a new sheet, call it TABLE 1. This is all infrastructure related information for your district and schools under SED.&lt;/li&gt;&#xA;&lt;li&gt;Add a sum formula at the end of your TABLE 1 and find the total number of schools in each column.&lt;/li&gt;&#xA;&lt;li&gt;Find how many schools have a Playground in total and how many do not have a playground and create a separate summary table for this. Call it TABLE 2.&lt;/li&gt;&#xA;&lt;li&gt;TABLE 2 should look like the exhibit below:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/mod-3-assigment-table.png&#34; alt=&#34;&#34;  /&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

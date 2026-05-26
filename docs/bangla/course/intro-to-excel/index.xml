@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to Excel on Data Management Training</title>
+    <link>http://localhost:1313/bangla/course/intro-to-excel/</link>
+    <description>Recent content in Introduction to Excel on Data Management Training</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Tue, 06 Jun 2023 12:45:31 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/bangla/course/intro-to-excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Basics</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-01-the-basics/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-01-the-basics/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video provides an overview of what Excel is, what it can be used for, what the interface looks like, and the basic terminology related to spreadsheets.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Creating a Basic Spreadsheet</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-02-creating-a-basic-spreadsheet/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-02-creating-a-basic-spreadsheet/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video shows how to create a new spreadsheet, enter and format data, adjust column widths and row heights, and use basic formatting options like bold and italic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Working with Multiple Sheets</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-03-working-with-multiple-sheets/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-03-working-with-multiple-sheets/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video demonstrates how to add, rename, and delete sheets, and how to move and copy data between sheets.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Copying and Pasting</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-04-copying-and-pasting/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-04-copying-and-pasting/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video shows how to copy and paste data within a worksheet, between worksheets, and between workbooks, including Paste Special options.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Formatting Spreadsheets</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-05-formatting-spreadsheets/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-05-formatting-spreadsheets/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video covers formatting spreadsheets using cell borders, colours, and styles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Formatting Data as a Table</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-06-formatting-data-as-a-table/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-06-formatting-data-as-a-table/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video demonstrates how to format data as a table, choose a table style, apply filters, and add a total row.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sorting, Filtering and Data Validation</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-07-sorting-filtering-and-data-validation/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-07-sorting-filtering-and-data-validation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video shows how to sort data by one or more columns, filter data based on criteria, and use data validation to restrict data entry.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Basic Formulas and Functions</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-08-using-basic-formulas-and-functions/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-08-using-basic-formulas-and-functions/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video introduces basic mathematical functions like SUM, AVERAGE, COUNT, and MAX/MIN.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manipulating Text Using Basic Formulas</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-09-manipulating-text-using-basic-formulas/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-09-manipulating-text-using-basic-formulas/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video shows how to manipulate text using functions like AND, CONCAT, SPLIT, TRIM, and UPPER.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Good Practices</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/video-10-good-practices/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/video-10-good-practices/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the YouTube embed for this video when the link is available.&lt;/p&gt;&#xA;&lt;p&gt;This video covers good spreadsheet practices, including clear labels, avoiding merged cells, using consistent formatting, and backing up work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Excel Assessment</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/assessment/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/assessment/</guid>
+      <description>&lt;p&gt;This assessment is optional but highly recommended. Javascript-based answer checking will be added later.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Which of the following mathematical functions in Excel calculates the total of a range of cells?&#xA;a. AVERAGE&#xA;b. COUNT&#xA;X. SUM&#xA;d. MAX/MIN&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;How can you adjust the width of a column in Excel? Select all that are correct.&#xA;X. Right-click on the column header and select &amp;ldquo;Format Column Width&amp;rdquo;&#xA;X. Use the &amp;ldquo;Adjust Column Width&amp;rdquo; button on the Home tab&#xA;X. Drag the boundary between two column headers to resize it&#xA;d. Use the &amp;ldquo;Row Height&amp;rdquo; option in the Format Cells dialog box&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Excel Assignment</title>
+      <link>http://localhost:1313/bangla/course/intro-to-excel/assignment/</link>
+      <pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/bangla/course/intro-to-excel/assignment/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TODO:&lt;/strong&gt; Add the Module 1 assignment text and any supporting images when available.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
