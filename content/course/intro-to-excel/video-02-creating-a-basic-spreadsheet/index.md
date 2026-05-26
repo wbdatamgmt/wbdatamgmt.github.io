@@ -19,3 +19,7 @@ Key topics include:
 - Text Handling: Using the Wrap Text feature to manage longer entries within a single cell (6:06 - 8:06).
 
 By the end of the video, viewers will have a functional understanding of how to organize, format, and size a spreadsheet for readability.
+
+---
+
+**Assignment:** [Exercise 1: Creating a Spreadsheet](/course/intro-to-excel/assignment/#exercise-1-creating-a-spreadsheet)

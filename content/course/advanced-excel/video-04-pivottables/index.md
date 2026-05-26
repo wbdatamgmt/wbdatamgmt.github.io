@@ -17,3 +17,7 @@ Key highlights include:
 - Building Tables: Demonstrates how to use the PivotTable Fields pane to drag and drop fields into Rows, Columns, and Values (3:28 - 4:15).
 - Advanced Analysis: Shows how to perform more complex summaries, such as breaking down data by categories (e.g., blocks and management types) and creating multi-layered reports (5:00 - 9:55).
 - Best Practices: Emphasizes that successful pivot table creation relies on having a clear mental picture of the desired output and encourages users to practice with their own institutional data (9:55 - 11:41).
+
+---
+
+**Assignment:** [Exercise 4: Pivot Tables](/course/advanced-excel/assignment/#exercise-4-pivot-tables)

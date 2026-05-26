@@ -17,3 +17,7 @@ This video provides a comprehensive tutorial on using various IF statements to a
 - Advanced Aggregation: Using COUNTIFS and SUMIFS to handle multiple criteria for counting or summing data ranges (10:42 - 13:20).
 
 The instructor emphasizes the utility of these functions for data management and suggests practicing with the provided exercises to master these concepts (15:03 - 15:34).
+
+---
+
+**Assignment:** [Exercise 3: IF Statements](/course/advanced-excel/assignment/#exercise-3-if-statements)

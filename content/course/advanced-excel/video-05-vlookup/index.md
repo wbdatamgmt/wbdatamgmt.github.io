@@ -17,3 +17,7 @@ Key takeaways include:
 - Step-by-Step Implementation: A demonstration of how to define the lookup value, table array, column index number, and the range lookup (exact vs. approximate match) to pull specific information like enrollment numbers or facility details (1:34-5:10).
 - Best Practices: Tips on using unique identifiers (like U-DISE codes) for accurate matching (5:12-6:26).
 - Limitations: A brief explanation of when to use more advanced tools like INDEX and MATCH functions, specifically when the required data is located to the left of the lookup column (7:34-8:20).
+
+---
+
+**Assignment:** [Exercise 5: VLOOKUP](/course/advanced-excel/assignment/#exercise-5-vlookup)

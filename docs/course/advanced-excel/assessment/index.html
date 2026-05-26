@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-uk">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>Advanced Excel Functions Assessment | Data Management Training</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This assessment is optional but highly recommended. Javascript-based answer checking will be added later.
-
+    <meta name="description" content="
 
 What does Conditional Formatting in Excel help you achieve?
 a. Create drop-down lists
@@ -19,7 +18,14 @@ How can you count the number of cells in a range that meet a specific condition 
 a. Using the SUM function
 b. Using the CONCATENATE function
 X. Using the COUNTIF function
-d. Using the IFERROR function">
+d. Using the IFERROR function
+
+
+What is the purpose of using IF statements in Excel?
+a. To merge data from different tables
+X. To create conditions that determine the outcome of a cell
+c. To create PivotTables
+d. To validate data entry in cells">
     <meta name="generator" content="Hugo 0.159.2">
     <link rel="stylesheet" href="/css/course.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -38,7 +44,7 @@ d. Using the IFERROR function">
     </label>
 
     <div class="nav-links">
-      <a href="/excel-reference">Excel Reference</a>
+      
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" aria-haspopup="true">Courses</button>
@@ -153,83 +159,78 @@ d. Using the IFERROR function">
 
   <h1>Advanced Excel Functions Assessment</h1>
 
-  
+  <p class="assessment-intro">This assessment is optional but highly recommended. Answer all questions and click <strong>Submit</strong> to see your score.</p>
 
-  <div class="lesson-content">
-    <p>This assessment is optional but highly recommended. Javascript-based answer checking will be added later.</p>
-<ol>
-<li>
-<p>What does Conditional Formatting in Excel help you achieve?
+  <script type="text/plain" id="assessment-data">
+1. What does Conditional Formatting in Excel help you achieve?
 a. Create drop-down lists
 b. Analyze data with PivotTables
 X. Highlight important data in spreadsheets
-d. Apply VLOOKUP to lookup values</p>
-</li>
-<li>
-<p>How can you count the number of cells in a range that meet a specific condition in Excel?
+d. Apply VLOOKUP to lookup values
+
+2. How can you count the number of cells in a range that meet a specific condition in Excel?
 a. Using the SUM function
 b. Using the CONCATENATE function
 X. Using the COUNTIF function
-d. Using the IFERROR function</p>
-</li>
-<li>
-<p>What is the purpose of using IF statements in Excel?
+d. Using the IFERROR function
+
+3. What is the purpose of using IF statements in Excel?
 a. To merge data from different tables
 X. To create conditions that determine the outcome of a cell
 c. To create PivotTables
-d. To validate data entry in cells</p>
-</li>
-<li>
-<p>In Excel, PivotTables allow you to:
+d. To validate data entry in cells
+
+4. In Excel, PivotTables allow you to:
 X. Analyze and summarize large amounts of data
 b. Apply conditional formatting to data
 c. Use data validation for cells
-d. Perform VLOOKUP operations</p>
-</li>
-<li>
-<p>Which Excel function can be used to find the sum of values that meet specific criteria?
+d. Perform VLOOKUP operations
+
+5. Which Excel function can be used to find the sum of values that meet specific criteria?
 a. LOOKUP
 X. SUMIF
 c. VLOOKUP
-d. INDEX</p>
-</li>
-<li>
-<p>What does the VLOOKUP function do in Excel?
+d. INDEX
+
+6. What does the VLOOKUP function do in Excel?
 a. Sort data in ascending order
 X. Find data from one table and insert it into another table based on a matching value
 c. Perform mathematical calculations
-d. Validate data entry in cells</p>
-</li>
-<li>
-<p>Which logical operator can be used with IF statements to combine multiple conditions in Excel?
+d. Validate data entry in cells
+
+7. Which logical operator can be used with IF statements to combine multiple conditions in Excel?
 a. OR
 b. XOR
 X. AND
-d. Both A and C</p>
-</li>
-<li>
-<p>How can you apply color scales and data bars to visualize data in Excel?
+d. Both A and C
+
+8. How can you apply color scales and data bars to visualize data in Excel?
 a. Using the SUM function
 X. Using Conditional Formatting
 c. Using VLOOKUP
-d. Using Data Validation</p>
-</li>
-<li>
-<p>In Excel, which function is used to find data in a table based on both row and column criteria?
+d. Using Data Validation
+
+9. In Excel, which function is used to find data in a table based on both row and column criteria?
 a. VLOOKUP
 b. HLOOKUP
 X. INDEX and MATCH
-d. IFERROR</p>
-</li>
-<li>
-<p>Compare INDEX-MATCH with VLOOKUP in Excel. Which of the following statements is true?
+d. IFERROR
+
+10. Compare INDEX-MATCH with VLOOKUP in Excel. Which of the following statements is true?
 X. INDEX-MATCH can look up data based on multiple criteria, while VLOOKUP can only look up data based on one criterion.
 b. INDEX-MATCH is used for conditional formatting, while VLOOKUP is used for data validation.
 c. VLOOKUP is more flexible than INDEX-MATCH when dealing with large datasets.
-d. INDEX-MATCH and VLOOKUP are two names for the same function in Excel.</p>
-</li>
-</ol>
+d. INDEX-MATCH and VLOOKUP are two names for the same function in Excel.
+</script>
 
+  <form id="assessment-quiz" class="assessment-quiz" novalidate></form>
+
+  <div id="assessment-result" class="assessment-result" hidden>
+    <div class="result-score">
+      <span class="score-label">Your Score</span>
+      <span class="score-value" id="score-value"></span>
+    </div>
+    <button type="button" class="btn btn-secondary" id="retry-btn">Try Again</button>
   </div>
 
   
@@ -285,6 +286,207 @@ d. INDEX-MATCH and VLOOKUP are two names for the same function in Excel.</p>
 
 
 </div>
+
+<script>
+(function() {
+  var raw = document.getElementById('assessment-data').textContent;
+
+  var questions = parseAssessment(raw);
+  if (questions.length === 0) return;
+
+  var quizEl = document.getElementById('assessment-quiz');
+  var resultEl = document.getElementById('assessment-result');
+  var scoreEl = document.getElementById('score-value');
+  var submitted = false;
+
+  renderQuiz(questions, quizEl);
+
+  var submitBtn = document.createElement('button');
+  submitBtn.type = 'button';
+  submitBtn.className = 'btn btn-primary';
+  submitBtn.textContent = 'Submit';
+  submitBtn.id = 'submit-btn';
+  quizEl.appendChild(submitBtn);
+
+  submitBtn.addEventListener('click', function() {
+    if (submitted) return;
+    submitted = true;
+    submitBtn.disabled = true;
+
+    var inputs = quizEl.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = true;
+    }
+
+    var correct = 0;
+    for (var q = 0; q < questions.length; q++) {
+      var qData = questions[q];
+      var qCard = document.getElementById('q-' + q);
+      var selected = getSelected(q, qData.multi);
+      var isCorrect = arraysEqual(selected.sort(), qData.correct.sort());
+
+      if (isCorrect) {
+        correct++;
+        qCard.classList.add('correct');
+      } else {
+        qCard.classList.add('incorrect');
+      }
+
+      for (var o = 0; o < qData.options.length; o++) {
+        var optEl = document.getElementById('q-' + q + '-o-' + o);
+        var label = optEl.closest('.option-row');
+        if (qData.correct.indexOf(o) !== -1) {
+          label.classList.add('answer-correct');
+        } else if (selected.indexOf(o) !== -1) {
+          label.classList.add('answer-wrong');
+        }
+      }
+    }
+
+    scoreEl.textContent = correct + ' / ' + questions.length;
+    resultEl.hidden = false;
+    resultEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  document.getElementById('retry-btn').addEventListener('click', function() {
+    submitted = false;
+    submitBtn.disabled = false;
+    resultEl.hidden = true;
+
+    var inputs = quizEl.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = false;
+      inputs[i].checked = false;
+    }
+
+    var cards = quizEl.querySelectorAll('.question-card');
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove('correct', 'incorrect');
+    }
+
+    var rows = quizEl.querySelectorAll('.option-row');
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].classList.remove('answer-correct', 'answer-wrong');
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function parseAssessment(text) {
+    var lines = text.split('\n');
+    var questions = [];
+    var current = null;
+
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i].trim();
+      if (!line) continue;
+
+      var qMatch = line.match(/^(\d+)\.\s+(.+)/);
+      if (qMatch) {
+        if (current) questions.push(current);
+        current = { text: qMatch[2], options: [], correct: [], multi: false };
+        continue;
+      }
+
+      if (!current) continue;
+
+      var optMatch = line.match(/^([a-dA-D])\.\s+(.+)/);
+      if (optMatch) {
+        current.options.push({ label: optMatch[1], text: optMatch[2] });
+        continue;
+      }
+
+      var correctMatch = line.match(/^X\.\s+(.+)/);
+      if (correctMatch) {
+        var idx = current.options.length;
+        current.options.push({ label: String.fromCharCode(97 + idx), text: correctMatch[1] });
+        current.correct.push(idx);
+        continue;
+      }
+    }
+
+    if (current && current.options.length > 0) questions.push(current);
+
+    for (var q = 0; q < questions.length; q++) {
+      if (questions[q].correct.length > 1) {
+        questions[q].multi = true;
+      }
+    }
+
+    return questions;
+  }
+
+  function renderQuiz(questions, container) {
+    for (var q = 0; q < questions.length; q++) {
+      var qData = questions[q];
+      var card = document.createElement('div');
+      card.className = 'question-card';
+      card.id = 'q-' + q;
+
+      var heading = document.createElement('p');
+      heading.className = 'question-text';
+      heading.innerHTML = '<span class="question-num">' + (q + 1) + '</span>' + escapeHtml(qData.text);
+      if (qData.multi) {
+        var badge = document.createElement('span');
+        badge.className = 'multi-badge';
+        badge.textContent = 'Select all that apply';
+        heading.appendChild(badge);
+      }
+      card.appendChild(heading);
+
+      var optionsDiv = document.createElement('div');
+      optionsDiv.className = 'options-group';
+
+      for (var o = 0; o < qData.options.length; o++) {
+        var row = document.createElement('label');
+        row.className = 'option-row';
+
+        var input = document.createElement('input');
+        input.type = qData.multi ? 'checkbox' : 'radio';
+        input.name = 'q-' + q;
+        input.id = 'q-' + q + '-o-' + o;
+        input.value = o;
+
+        var span = document.createElement('span');
+        span.className = 'option-text';
+        span.textContent = qData.options[o].label.toUpperCase() + '. ' + qData.options[o].text;
+
+        row.appendChild(input);
+        row.appendChild(span);
+        optionsDiv.appendChild(row);
+      }
+
+      card.appendChild(optionsDiv);
+      container.appendChild(card);
+    }
+  }
+
+  function getSelected(qIndex, multi) {
+    var result = [];
+    var inputs = document.querySelectorAll('input[name="q-' + qIndex + '"]');
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].checked) {
+        result.push(parseInt(inputs[i].value, 10));
+      }
+    }
+    return result;
+  }
+
+  function arraysEqual(a, b) {
+    if (a.length !== b.length) return false;
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+})();
+</script>
 
 
     </main>

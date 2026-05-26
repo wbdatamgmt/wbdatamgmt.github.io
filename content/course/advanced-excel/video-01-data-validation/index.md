@@ -20,3 +20,7 @@ Key highlights covered include:
 - Setting Constraints: Using criteria like text length limits for remarks (6:02-7:12).
 - Custom Error Messages: Configuring user-friendly alerts to guide data entry (8:10-8:54).
 - Advanced Pattern Validation: Applying specific ranges to IDs like U-DISE codes to prevent common typos (9:00-10:19).
+
+---
+
+**Assignment:** [Exercise 1: Data Validation](/course/advanced-excel/assignment/#exercise-1-data-validation)

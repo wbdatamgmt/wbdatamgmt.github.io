@@ -17,3 +17,7 @@ It covers essential skills for organizing and manipulating data across different
 - Organizing Layout: Techniques for moving and rearranging the order of sheets by dragging or using the 'Move or Copy' dialog (1:37 - 2:42).
 - Duplication: How to create exact copies of sheets, which is useful for backups or maintaining consistent formatting (2:43 - 3:46).
 - Data Transfer: Methods for cutting, copying, and pasting data between different sheets, as well as using the undo function (4:19 - 5:10).
+
+---
+
+**Assignment:** [Exercise 2: Working with Multiple Sheets](/course/intro-to-excel/assignment/#exercise-2-working-with-multiple-sheets)

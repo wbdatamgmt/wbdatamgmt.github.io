@@ -19,3 +19,7 @@ This video provides a tutorial on using conditional formatting to analyze and vi
 - Incorporate Logic: Using formulas like SUM within conditional formatting to identify schools with specific social category enrollment (8:51-10:07).
 
 The video emphasizes that conditional formatting is dynamic, meaning the highlights automatically update whenever the underlying data changes (10:35-11:07).
+
+---
+
+**Assignment:** [Exercise 2: Conditional Formatting](/course/advanced-excel/assignment/#exercise-2-conditional-formatting)

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-uk">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>Data Visualisation Assessment | Data Management Training</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This assessment is optional but highly recommended. Javascript-based answer checking will be added later.
-
+    <meta name="description" content="
 
 What is the primary purpose of data visualisation?
 a. To add more complexity to data
@@ -15,7 +14,7 @@ c. To hide important information
 d. To make data confusing
 
 
-Which of the below indicate the importance of data visualisation? (Multiple choice)
+Which of the below statements indicates the importance of data visualisation?
 a. It enables us to see patterns and trends that might not be apparent from looking at the raw data
 b. It makes data analysis more complicated and time consuming
 X. It enables us to make data-driven decisions based on facts rather than opinions or assumptions
@@ -38,7 +37,7 @@ d. It is only useful for experts in data analysis">
     </label>
 
     <div class="nav-links">
-      <a href="/excel-reference">Excel Reference</a>
+      
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" aria-haspopup="true">Courses</button>
@@ -145,83 +144,78 @@ d. It is only useful for experts in data analysis">
 
   <h1>Data Visualisation Assessment</h1>
 
-  
+  <p class="assessment-intro">This assessment is optional but highly recommended. Answer all questions and click <strong>Submit</strong> to see your score.</p>
 
-  <div class="lesson-content">
-    <p>This assessment is optional but highly recommended. Javascript-based answer checking will be added later.</p>
-<ol>
-<li>
-<p>What is the primary purpose of data visualisation?
+  <script type="text/plain" id="assessment-data">
+1. What is the primary purpose of data visualisation?
 a. To add more complexity to data
 X. To simplify complex data for easier understanding
 c. To hide important information
-d. To make data confusing</p>
-</li>
-<li>
-<p>Which of the below indicate the importance of data visualisation? (Multiple choice)
+d. To make data confusing
+
+2. Which of the below statements indicates the importance of data visualisation?
 a. It enables us to see patterns and trends that might not be apparent from looking at the raw data
 b. It makes data analysis more complicated and time consuming
 X. It enables us to make data-driven decisions based on facts rather than opinions or assumptions
-d. It is only useful for experts in data analysis</p>
-</li>
-<li>
-<p>Why do we add labels to data visualisations?
+d. It is only useful for experts in data analysis
+
+3. Why do we add labels to data visualisations?
 a. To make them look colourful
 b. To hide information
 X. To explain what the visualisation means
-d. To confuse the audience</p>
-</li>
-<li>
-<p>Which of the following is an advantage of using colour in data visualisation?
+d. To confuse the audience
+
+4. Which of the following is an advantage of using colour in data visualisation?
 a. It increases file size
 b. It makes data harder to interpret
 X. It helps differentiate categories easily
-d. It limits creativity in visualisation</p>
-</li>
-<li>
-<p>Which of these is not a common element of data visualisation?
+d. It limits creativity in visualisation
+
+5. Which of these is not a common element of data visualisation?
 a. Title
 b. Legend
 c. Scale
-X. Eraser</p>
-</li>
-<li>
-<p>Which type of chart is best suited for showing trends over time?
+X. Eraser
+
+6. Which type of chart is best suited for showing trends over time?
 X. Line chart
 b. Pie chart
 c. Scatter plot
-d. Bar chart</p>
-</li>
-<li>
-<p>Which type of chart should have data that adds up to 100%?
+d. Bar chart
+
+7. Which type of chart should have data that adds up to 100%?
 a. Line chart
 X. Pie chart
 c. Scatter plot
-d. Histogram</p>
-</li>
-<li>
-<p>Which type of chart is best suited for comparing values across different categories?
+d. Histogram
+
+8. Which type of chart is best suited for comparing values across different categories?
 a. Scatter plot
 b. Histogram
 c. Line chart
-X. Bar chart</p>
-</li>
-<li>
-<p>Which one of the following is a good practice for creating data visualisations?
+X. Bar chart
+
+9. Which one of the following is a good practice for creating data visualisations?
 a. Trying to say too many things in one chart
 b. Adding unnecessary design (like 3D chart)
 c. Not providing labels and data values
-X. Choosing the right type of chart</p>
-</li>
-<li>
-<p>Which of the following is NOT a characteristic of effective data visualisation?
+X. Choosing the right type of chart
+
+10. Which of the following is NOT a characteristic of effective data visualisation?
 a. Clarity in presentation
 b. Consistency in design
 X. Inclusion of irrelevant data
-d. Use appropriate scale for the axis</p>
-</li>
-</ol>
+d. Use appropriate scale for the axis
+</script>
 
+  <form id="assessment-quiz" class="assessment-quiz" novalidate></form>
+
+  <div id="assessment-result" class="assessment-result" hidden>
+    <div class="result-score">
+      <span class="score-label">Your Score</span>
+      <span class="score-value" id="score-value"></span>
+    </div>
+    <button type="button" class="btn btn-secondary" id="retry-btn">Try Again</button>
   </div>
 
   
@@ -269,6 +263,207 @@ d. Use appropriate scale for the axis</p>
 
 
 </div>
+
+<script>
+(function() {
+  var raw = document.getElementById('assessment-data').textContent;
+
+  var questions = parseAssessment(raw);
+  if (questions.length === 0) return;
+
+  var quizEl = document.getElementById('assessment-quiz');
+  var resultEl = document.getElementById('assessment-result');
+  var scoreEl = document.getElementById('score-value');
+  var submitted = false;
+
+  renderQuiz(questions, quizEl);
+
+  var submitBtn = document.createElement('button');
+  submitBtn.type = 'button';
+  submitBtn.className = 'btn btn-primary';
+  submitBtn.textContent = 'Submit';
+  submitBtn.id = 'submit-btn';
+  quizEl.appendChild(submitBtn);
+
+  submitBtn.addEventListener('click', function() {
+    if (submitted) return;
+    submitted = true;
+    submitBtn.disabled = true;
+
+    var inputs = quizEl.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = true;
+    }
+
+    var correct = 0;
+    for (var q = 0; q < questions.length; q++) {
+      var qData = questions[q];
+      var qCard = document.getElementById('q-' + q);
+      var selected = getSelected(q, qData.multi);
+      var isCorrect = arraysEqual(selected.sort(), qData.correct.sort());
+
+      if (isCorrect) {
+        correct++;
+        qCard.classList.add('correct');
+      } else {
+        qCard.classList.add('incorrect');
+      }
+
+      for (var o = 0; o < qData.options.length; o++) {
+        var optEl = document.getElementById('q-' + q + '-o-' + o);
+        var label = optEl.closest('.option-row');
+        if (qData.correct.indexOf(o) !== -1) {
+          label.classList.add('answer-correct');
+        } else if (selected.indexOf(o) !== -1) {
+          label.classList.add('answer-wrong');
+        }
+      }
+    }
+
+    scoreEl.textContent = correct + ' / ' + questions.length;
+    resultEl.hidden = false;
+    resultEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  document.getElementById('retry-btn').addEventListener('click', function() {
+    submitted = false;
+    submitBtn.disabled = false;
+    resultEl.hidden = true;
+
+    var inputs = quizEl.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = false;
+      inputs[i].checked = false;
+    }
+
+    var cards = quizEl.querySelectorAll('.question-card');
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove('correct', 'incorrect');
+    }
+
+    var rows = quizEl.querySelectorAll('.option-row');
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].classList.remove('answer-correct', 'answer-wrong');
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function parseAssessment(text) {
+    var lines = text.split('\n');
+    var questions = [];
+    var current = null;
+
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i].trim();
+      if (!line) continue;
+
+      var qMatch = line.match(/^(\d+)\.\s+(.+)/);
+      if (qMatch) {
+        if (current) questions.push(current);
+        current = { text: qMatch[2], options: [], correct: [], multi: false };
+        continue;
+      }
+
+      if (!current) continue;
+
+      var optMatch = line.match(/^([a-dA-D])\.\s+(.+)/);
+      if (optMatch) {
+        current.options.push({ label: optMatch[1], text: optMatch[2] });
+        continue;
+      }
+
+      var correctMatch = line.match(/^X\.\s+(.+)/);
+      if (correctMatch) {
+        var idx = current.options.length;
+        current.options.push({ label: String.fromCharCode(97 + idx), text: correctMatch[1] });
+        current.correct.push(idx);
+        continue;
+      }
+    }
+
+    if (current && current.options.length > 0) questions.push(current);
+
+    for (var q = 0; q < questions.length; q++) {
+      if (questions[q].correct.length > 1) {
+        questions[q].multi = true;
+      }
+    }
+
+    return questions;
+  }
+
+  function renderQuiz(questions, container) {
+    for (var q = 0; q < questions.length; q++) {
+      var qData = questions[q];
+      var card = document.createElement('div');
+      card.className = 'question-card';
+      card.id = 'q-' + q;
+
+      var heading = document.createElement('p');
+      heading.className = 'question-text';
+      heading.innerHTML = '<span class="question-num">' + (q + 1) + '</span>' + escapeHtml(qData.text);
+      if (qData.multi) {
+        var badge = document.createElement('span');
+        badge.className = 'multi-badge';
+        badge.textContent = 'Select all that apply';
+        heading.appendChild(badge);
+      }
+      card.appendChild(heading);
+
+      var optionsDiv = document.createElement('div');
+      optionsDiv.className = 'options-group';
+
+      for (var o = 0; o < qData.options.length; o++) {
+        var row = document.createElement('label');
+        row.className = 'option-row';
+
+        var input = document.createElement('input');
+        input.type = qData.multi ? 'checkbox' : 'radio';
+        input.name = 'q-' + q;
+        input.id = 'q-' + q + '-o-' + o;
+        input.value = o;
+
+        var span = document.createElement('span');
+        span.className = 'option-text';
+        span.textContent = qData.options[o].label.toUpperCase() + '. ' + qData.options[o].text;
+
+        row.appendChild(input);
+        row.appendChild(span);
+        optionsDiv.appendChild(row);
+      }
+
+      card.appendChild(optionsDiv);
+      container.appendChild(card);
+    }
+  }
+
+  function getSelected(qIndex, multi) {
+    var result = [];
+    var inputs = document.querySelectorAll('input[name="q-' + qIndex + '"]');
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].checked) {
+        result.push(parseInt(inputs[i].value, 10));
+      }
+    }
+    return result;
+  }
+
+  function arraysEqual(a, b) {
+    if (a.length !== b.length) return false;
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+})();
+</script>
 
 
     </main>

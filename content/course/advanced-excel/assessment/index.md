@@ -4,10 +4,9 @@ date: 2023-06-06T12:45:31+05:30
 draft: false
 showToc: false
 type: "course"
+layout: "assessment"
 weight: 90
 ---
-
-This assessment is optional but highly recommended. Javascript-based answer checking will be added later.
 
 1. What does Conditional Formatting in Excel help you achieve?
 a. Create drop-down lists

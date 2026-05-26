@@ -18,3 +18,7 @@ Key takeaways include:
 - Practical applications: The instructor demonstrates how to apply these functions to retrieve data like school names, U-DISE codes, and block names across different datasets (5:29 - 8:04).
 
 By the end of the video (8:05 - 9:24), viewers gain a solid understanding of how these functions offer greater versatility than standard lookup tools, allowing for more complex data management in Excel.
+
+---
+
+**Assignment:** [Exercise 6: INDEX & MATCH](/course/advanced-excel/assignment/#exercise-6-index--match)

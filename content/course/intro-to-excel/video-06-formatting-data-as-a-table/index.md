@@ -19,3 +19,7 @@ Key takeaways include:
 - Data Analysis Tools: Utilizing built-in filter drop-downs and sorting options to manage large datasets efficiently (2:26 - 4:03).
 - Total Row Functionality: Adding a responsive "Total" row that automatically updates formulas when sorting or modifying data (4:38 - 5:58).
 - Flexibility: How to convert a table back into a standard range if needed (6:37 - 7:06).
+
+---
+
+**Assignment:** [Exercise 5: Formatting Data as a Table](/course/intro-to-excel/assignment/#exercise-5-formatting-data-as-a-table)

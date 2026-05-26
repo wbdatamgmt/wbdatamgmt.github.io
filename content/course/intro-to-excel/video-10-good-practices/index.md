@@ -19,3 +19,7 @@ Key takeaways covered in the video include:
 - Data Formatting: Tips on maintaining consistent formatting and avoiding potential issues with merged cells when sorting or filtering data (4:02 - 7:10).
 - Data Security: The importance of regular backups and using the Ctrl+S shortcut to prevent data loss (7:11 - 8:05).
 - Custom Lists: A bonus tutorial on creating and importing custom lists to automate repetitive data entry, such as district or department names (8:06 - 10:58).
+
+---
+
+**Assignment:** [Exercise 9: Good Practices](/course/intro-to-excel/assignment/#exercise-9-good-practices)

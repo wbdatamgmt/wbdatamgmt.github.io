@@ -19,3 +19,7 @@ Key features covered include:
 - Transpose: A helpful tool for flipping your data so that column headers become row headers (2:45).
 - Paste Formulas: Enables users to copy only the underlying formulas (indicated by the FX icon) from one cell to another while automatically adjusting the cell references (4:36).
 - Format Painter: Demonstrates how to quickly copy the aesthetic styling (like font weight and cell color) from one area to another without using standard clipboard commands (5:17).
+
+---
+
+**Assignment:** [Exercise 3: Copying and Pasting](/course/intro-to-excel/assignment/#exercise-3-copying-and-pasting)

@@ -4,10 +4,9 @@ date: 2023-06-06T12:45:31+05:30
 draft: false
 showToc: false
 type: "course"
+layout: "assessment"
 weight: 90
 ---
-
-This assessment is optional but highly recommended. Javascript-based answer checking will be added later.
 
 1. What is the primary purpose of data visualisation?
 a. To add more complexity to data
@@ -15,7 +14,7 @@ X. To simplify complex data for easier understanding
 c. To hide important information
 d. To make data confusing
 
-2. Which of the below indicate the importance of data visualisation? (Multiple choice)
+2. Which of the below statements indicates the importance of data visualisation?
 a. It enables us to see patterns and trends that might not be apparent from looking at the raw data
 b. It makes data analysis more complicated and time consuming
 X. It enables us to make data-driven decisions based on facts rather than opinions or assumptions
