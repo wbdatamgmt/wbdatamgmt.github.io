@@ -1,0 +1,29 @@
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    {{ $ancestors := slice }}
+    {{ $page := . }}
+    {{ range seq (len .Ancestors) }}
+      {{ $ancestors = $ancestors | append $page }}
+      {{ $page = $page.Parent }}
+    {{ end }}
+    {{ $ancestors = $ancestors | append $page }}
+
+    {{ $pos := 1 }}
+    {{ $total := len $ancestors }}
+    {{ range seq (sub $total 1) 0 }}
+      {{ $ancestor := index $ancestors . }}
+      {{ if eq . 0 }}
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="current" itemprop="name">{{ $ancestor.Title }}</span>
+          <meta itemprop="position" content="{{ $pos }}" />
+        </li>
+      {{ else }}
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="{{ $ancestor.RelPermalink }}"><span itemprop="name">{{ if $ancestor.IsHome }}Home{{ else }}{{ $ancestor.Title }}{{ end }}</span></a>
+          <meta itemprop="position" content="{{ $pos }}" />
+        </li>
+      {{ end }}
+      {{ $pos = add $pos 1 }}
+    {{ end }}
+  </ol>
+</nav>

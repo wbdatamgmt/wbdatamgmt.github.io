@@ -2,7 +2,7 @@
 	{{ if not .IsHome }}
 		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
 	{{ end }}
-	<a href="{{ "/excel-reference" | relURL }}">{{ i18n "excelReference" }}</a>
+	<!-- <a href="{{ "/excel-reference" | relURL }}">{{ i18n "excelReference" }}</a> -->
 	<div class="dropdown">
 		<button class="dropbtn">{{ i18n "courses" }}</button>
 		<div class="dropdown-content">

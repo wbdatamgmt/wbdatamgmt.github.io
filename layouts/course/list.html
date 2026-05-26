@@ -1,37 +1,46 @@
 {{ define "main" }}
 
-<section id="single">
-    <h1 class="title">{{ .Title }}</h1>
+<div class="content-wrap">
+  {{ partial "breadcrumb.html" . }}
 
-    <div class="tip">
-        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
-    </div>
-
-    <div class="content">
-      {{ .Content }}
-    </div>
-
-    {{ with .Pages.ByWeight }}
-    <section id="archive">
-        <div class="group">
-            <h3 class="key">Pages</h3>
-
-            {{ range . }}
-                <div class="value">
-                  <div class="date">
-                    {{ with .Params.weight }}{{ . }}{{ end }}
-                  </div>
-                  <div class="title">
-                      <a href="{{ .RelPermalink }}">
-                          {{ .Title }}
-                      </a>
-                  </div>
-                </div>
-            {{ end }}
-        </div>
-    </section>
+  <div class="module-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="module-description">{{ . }}</div>
     {{ end }}
+  </div>
 
-</section>
+  {{ with .Pages.ByWeight }}
+  <ol class="lesson-list">
+    {{ $num := 0 }}
+    {{ range . }}
+      {{ $isAssignment := in .RelPermalink "assignment" }}
+      {{ $isAssessment := in .RelPermalink "assessment" }}
+      {{ $isVideo := not (or $isAssignment $isAssessment) }}
+
+      <li class="lesson-item">
+        <a href="{{ .RelPermalink }}">
+          {{ if $isVideo }}
+            {{ $num = add $num 1 }}
+            <span class="lesson-number">{{ $num }}</span>
+          {{ else if $isAssignment }}
+            <span class="lesson-icon" aria-label="Assignment">&#9998;</span>
+          {{ else }}
+            <span class="lesson-icon" aria-label="Assessment">&#10003;</span>
+          {{ end }}
+
+          <span class="lesson-title">{{ .Title }}</span>
+
+          {{ if $isAssignment }}
+            <span class="lesson-type">Assignment</span>
+          {{ else if $isAssessment }}
+            <span class="lesson-type">Assessment</span>
+          {{ end }}
+        </a>
+      </li>
+    {{ end }}
+  </ol>
+  {{ end }}
+</div>
 
 {{ end }}

@@ -1,0 +1,26 @@
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+      <span></span>
+    </label>
+
+    <div class="nav-links">
+      <!-- <a href="{{ "/excel-reference" | relURL }}"{{ if eq .RelPermalink "/excel-reference/" }} class="active"{{ end }}>{{ i18n "excelReference" }}</a> -->
+
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-haspopup="true">{{ i18n "courses" }}</button>
+        <div class="nav-dropdown-menu" role="menu">
+          {{ $current := .RelPermalink }}
+          <a href="{{ "/course/intro-to-excel/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/intro-to-excel" }} class="active"{{ end }}>{{ i18n "introToExcel" }}</a>
+          <a href="{{ "/course/advanced-excel/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/advanced-excel" }} class="active"{{ end }}>{{ i18n "advancedExcel" }}</a>
+          <a href="{{ "/course/data-visualisation/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/data-visualisation" }} class="active"{{ end }}>{{ i18n "dataVisualisation" }}</a>
+          <a href="{{ "/course/google-forms/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/google-forms" }} class="active"{{ end }}>{{ i18n "googleForms" }}</a>
+          <a href="{{ "/course/google-sheets/" | relURL }}" role="menuitem"{{ if hasPrefix $current "/course/google-sheets" }} class="active"{{ end }}>{{ i18n "googleSheets" }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="content-wrap lesson-page">
+  {{ partial "breadcrumb.html" . }}
+
+  {{/* Progress bar */}}
+  {{ $parent := .Parent }}
+  {{ if $parent }}
+    {{ $siblings := $parent.Pages.ByWeight }}
+    {{ $total := len $siblings }}
+    {{ $currentIndex := 0 }}
+    {{ range $i, $p := $siblings }}
+      {{ if eq $p.RelPermalink $.RelPermalink }}
+        {{ $currentIndex = add $i 1 }}
+      {{ end }}
+    {{ end }}
+    {{ if gt $total 1 }}
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{ $currentIndex }}" aria-valuemin="1" aria-valuemax="{{ $total }}" aria-label="Lesson {{ $currentIndex }} of {{ $total }}">
+        <div class="progress-fill" style="width: {{ mul (div (float $currentIndex) (float $total)) 100 }}%"></div>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <h1>{{ .Title }}</h1>
+
+  {{ if or .Site.Params.showToc .Params.showToc }}
+    {{ partial "toc.html" . }}
+  {{ end }}
+
+  <div class="lesson-content">
+    {{ .Content }}
+  </div>
+
+  {{ partial "prev-next.html" . }}
+</div>
+
+{{ end }}

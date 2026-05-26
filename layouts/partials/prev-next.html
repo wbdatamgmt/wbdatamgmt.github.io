@@ -1,0 +1,41 @@
+{{ $parent := .Parent }}
+{{ if $parent }}
+  {{ $siblings := $parent.Pages.ByWeight }}
+  {{ $currentIndex := -1 }}
+  {{ range $i, $p := $siblings }}
+    {{ if eq $p.RelPermalink $.RelPermalink }}
+      {{ $currentIndex = $i }}
+    {{ end }}
+  {{ end }}
+
+  {{ $prev := false }}
+  {{ $next := false }}
+  {{ if gt $currentIndex 0 }}
+    {{ $prev = index $siblings (sub $currentIndex 1) }}
+  {{ end }}
+  {{ if lt $currentIndex (sub (len $siblings) 1) }}
+    {{ $next = index $siblings (add $currentIndex 1) }}
+  {{ end }}
+
+  {{ if or $prev $next }}
+  <nav class="prev-next" aria-label="Lesson navigation">
+    {{ if $prev }}
+      <a href="{{ $prev.RelPermalink }}" class="prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">{{ $prev.Title }}</span>
+      </a>
+    {{ else }}
+      <div class="placeholder"></div>
+    {{ end }}
+
+    {{ if $next }}
+      <a href="{{ $next.RelPermalink }}" class="next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">{{ $next.Title }}</span>
+      </a>
+    {{ else }}
+      <div class="placeholder"></div>
+    {{ end }}
+  </nav>
+  {{ end }}
+{{ end }}

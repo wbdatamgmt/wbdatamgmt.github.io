@@ -1,0 +1,816 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #eff6ff;
+  --primary-lighter: #dbeafe;
+  --text: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --bg: #ffffff;
+  --card-bg: #f8fafc;
+  --radius: 8px;
+  --max-width: 780px;
+  --nav-height: 56px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 1.75rem; font-weight: 700; }
+h2 { font-size: 1.35rem; font-weight: 600; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+
+p {
+  margin: 1em 0;
+}
+
+/* ---- Skip to content ---- */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  font-size: 14px;
+  border-radius: 0 0 var(--radius) 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ---- Navigation ---- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-height);
+}
+
+.site-nav .nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+}
+
+.site-nav .nav-brand {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  white-space: nowrap;
+  margin-right: auto;
+}
+
+.site-nav .nav-brand:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-nav .nav-links a {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+.site-nav .nav-links a:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.site-nav .nav-links a.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Dropdown */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-family: inherit;
+}
+
+.nav-dropdown-toggle:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.nav-dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid currentColor;
+  margin-left: 2px;
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 240px;
+  padding: 4px;
+  z-index: 200;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  display: block;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: var(--text);
+  border-radius: 4px;
+}
+
+.nav-dropdown-menu a:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Hamburger - checkbox hack */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: var(--text);
+  height: 2px;
+  width: 20px;
+  border-radius: 2px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before { top: -6px; }
+.nav-toggle-label span::after { top: 6px; }
+
+@media (max-width: 700px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .site-nav .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 8px 16px;
+    gap: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span {
+    background: transparent;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .site-nav .nav-links a,
+  .nav-dropdown-toggle {
+    padding: 10px 12px;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+    min-width: auto;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    display: block;
+  }
+
+  .nav-dropdown-toggle::after {
+    display: none;
+  }
+}
+
+/* ---- Breadcrumbs ---- */
+.breadcrumb {
+  padding: 12px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb li + li::before {
+  content: '›';
+  margin-right: 4px;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.breadcrumb a {
+  color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb .current {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ---- Main content wrapper ---- */
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Homepage ---- */
+.hero {
+  text-align: center;
+  padding: 48px 24px 32px;
+  background: linear-gradient(180deg, var(--primary-light) 0%, var(--bg) 100%);
+}
+
+.hero .logo {
+  width: 72px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  margin: 0 0 8px;
+}
+
+.hero .subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto 12px;
+  line-height: 1.5;
+}
+
+.hero .intro {
+  max-width: 600px;
+  margin: 16px auto 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Module cards */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 24px 0 48px;
+}
+
+.module-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.module-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+  text-decoration: none;
+}
+
+.module-card .module-number {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.module-card h2 {
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+.module-card .module-meta {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.module-card .module-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 32px 20px 24px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px 0 32px;
+  }
+}
+
+/* ---- Module page (lesson list) ---- */
+.module-header {
+  padding: 32px 0 16px;
+}
+
+.module-header h1 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.module-header .module-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.lesson-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 48px;
+}
+
+.lesson-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+  transition: border-color 0.15s;
+}
+
+.lesson-item:hover {
+  border-color: var(--primary);
+}
+
+.lesson-item a {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  color: var(--text);
+  gap: 12px;
+}
+
+.lesson-item a:hover {
+  text-decoration: none;
+}
+
+.lesson-item .lesson-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lesson-item .lesson-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.lesson-item .lesson-title {
+  flex: 1;
+  font-size: 15px;
+}
+
+.lesson-item .lesson-type {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* ---- Single lesson page ---- */
+.lesson-page {
+  padding-top: 8px;
+  padding-bottom: 48px;
+}
+
+.lesson-page h1 {
+  font-size: 1.5rem;
+  margin: 0 0 24px;
+}
+
+/* Progress indicator */
+.progress-bar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.progress-bar .progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+/* Responsive video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #000;
+  margin-bottom: 24px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.lesson-content {
+  line-height: 1.75;
+}
+
+.lesson-content ul,
+.lesson-content ol {
+  padding-left: 24px;
+}
+
+.lesson-content li {
+  margin-bottom: 4px;
+}
+
+/* ---- Prev/Next navigation ---- */
+.prev-next {
+  display: flex;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.prev-next a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.prev-next a:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  text-decoration: none;
+}
+
+.prev-next .nav-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.prev-next .nav-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.prev-next .next {
+  text-align: right;
+  margin-left: auto;
+}
+
+.prev-next .placeholder {
+  flex: 1;
+}
+
+@media (max-width: 500px) {
+  .prev-next {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  text-align: center;
+  padding: 32px 24px;
+  margin-top: 48px;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* ---- Table styles ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+}
+
+thead th {
+  background: var(--card-bg);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text);
+}
+
+tr:nth-child(even) td {
+  background: var(--card-bg);
+}
+
+/* ---- Code ---- */
+p code, li code {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--card-bg);
+  padding: 2px 6px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+pre code {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* ---- Blockquote ---- */
+blockquote {
+  margin: 16px 0;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--primary-lighter);
+  color: var(--text-secondary);
+}
+
+/* ---- Table of contents ---- */
+.toc {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  margin: 24px 0;
+}
+
+.toc details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.toc ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.toc a {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.toc a:hover {
+  color: var(--primary);
+}
+
+/* ---- HR ---- */
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 32px 0;
+}
+
+/* ---- Course overview page (under /course/) ---- */
+.course-overview {
+  padding: 32px 0 48px;
+}
+
+.course-overview h1 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+}
+
+.course-overview .course-desc {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* ---- Assessment styles ---- */
+.lesson-content ol {
+  counter-reset: none;
+}
+
+.lesson-content ol > li {
+  margin-bottom: 12px;
+}
+
+/* ---- Anchor headings ---- */
+.anchor {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  visibility: hidden;
+  margin-left: 4px;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor {
+  visibility: visible;
+}
+
+/* ---- Markdown images ---- */
+.markdown-image img {
+  border-radius: var(--radius);
+}

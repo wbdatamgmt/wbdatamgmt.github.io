@@ -10,10 +10,3 @@ weight: 4
 The participants will learn how to create online surveys and quizzes using Google Forms. They will be able to create a new form, add questions and response options, customise form settings, use conditional logic, share the form, view responses, and follow good practices for creating effective forms.
 
 ## Components
-
-1. Creating a new form
-2. Customising form settings
-3. Adding conditional logic
-4. Sharing the form
-5. Viewing responses
-6. Best practices for creating effective forms
