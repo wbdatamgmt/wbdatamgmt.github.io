@@ -8,10 +8,19 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ hugo.Generator }}
     <link rel="stylesheet" href="{{ "/css/course.css" | relURL }}">
-    <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | relURL }}" type="image/x-icon" />
     {{ if or .Params.math .Site.Params.math }}
       {{ partial "math.html" . }}
     {{ end }}
+
+    <meta property="og:title" content="Basics of Data Management">
+    <meta property="og:site_name" content="Basics of Data Management">
+    <meta property="og:url" content="https://wbdatamgmt.github.io/">
+    <meta property="og:description" content="A free, self-paced video course covering Excel, data visualisation, Google Forms, and Google Sheets.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wbdatamgmt.github.io/Basics of Data Management.png">
+
+    <script data-goatcounter="https://wbdatamgmt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
 
   <body>
