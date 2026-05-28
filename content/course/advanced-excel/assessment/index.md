@@ -48,8 +48,8 @@ d. Validate data entry in cells
 7. Which logical operator can be used with IF statements to combine multiple conditions in Excel?
 a. OR
 b. XOR
-X. AND
-d. Both A and C
+c. AND
+X. Both A and C
 
 8. How can you apply color scales and data bars to visualize data in Excel?
 a. Using the SUM function

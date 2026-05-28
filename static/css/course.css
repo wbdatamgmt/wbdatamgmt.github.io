@@ -783,8 +783,8 @@ h4:hover .anchor {
 }
 
 .question-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  /* border: 1px solid var(--border); */
+  /* border-radius: var(--radius); */
   padding: 20px 24px;
   background: var(--bg);
   transition: border-color 0.2s, background 0.2s;
