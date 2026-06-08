@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Course-end Assessment on Basics of Data Management</title>
+		<link>https://wbdatamgmt.github.io/bangla-course/course-end-assessment/</link>
+		<description>Recent content in Course-end Assessment on Basics of Data Management</description>
+		<generator>Hugo</generator>
+		<language>en-in</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 06 Jun 2024 12:45:31 +0530</lastBuildDate>
+		
+			<atom:link href="https://wbdatamgmt.github.io/bangla-course/course-end-assessment/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Data Management Course End Assessment</title>
+				<link>https://wbdatamgmt.github.io/bangla-course/course-end-assessment/assessment/</link>
+				<pubDate>Thu, 06 Jun 2024 12:45:31 +0530</pubDate>
+				<guid>https://wbdatamgmt.github.io/bangla-course/course-end-assessment/assessment/</guid>
+				<description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Which formula correctly calculates the total of all values in cells B2 through B10?&#xA;a. =TOTAL(B2:B10)&#xA;X. =SUM(B2:B10)&#xA;c. =ADD(B2:B10)&#xA;d. =SUM(B2-B10)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What does the COUNT function in Excel do?&#xA;X. Counts the number of cells that contain numbers in a specified range&#xA;b. Adds all numerical values in a range and returns the total&#xA;c. Returns the largest value found in a range of cells&#xA;d. Calculates the arithmetic mean of values in a range&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

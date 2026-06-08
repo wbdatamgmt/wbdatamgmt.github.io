@@ -28,9 +28,17 @@
     {{ range $modules }}
       {{ range .Sections.ByWeight }}
         <a class="module-card" href="{{ .RelPermalink }}">
-          <span class="module-number">{{ $en.moduleLabel.other }} {{ .Weight }}</span>
+          {{ if ne .Weight 6 }}
+            <span class="module-number">{{ $en.moduleLabel.other }} {{ .Weight }}</span>
+          {{ else }}
+            <span class="module-number">{{ $en.assessmentLabel.other }}</span>
+          {{ end }}
           <h2>{{ .Title }}</h2>
-          <span class="module-meta">{{ (sub (len .Pages) 2) }} {{ $en.videosLabel.other }}</span>
+          {{ if ne .Weight 6 }}
+            <span class="module-meta">{{ (sub (len .Pages) 2) }} {{ $en.videosLabel.other }}</span>
+          {{ else }}
+            <span class="module-meta">1 quiz</span>
+          {{ end }}
           {{ with .Content }}
             <p class="module-desc">{{ . | plainify | truncate 150 }}</p>
           {{ end }}
@@ -40,13 +48,21 @@
   </div>
 
   <div class="modules-grid lang-hidden" id="modules-bn">
-    {{ $banglaModules := (where .Site.Sections "Section" "bangla-course") }}
-    {{ range $banglaModules }}
+    {{ $modules := (where .Site.Sections "Section" "bangla-course") }}
+    {{ range $modules }}
       {{ range .Sections.ByWeight }}
         <a class="module-card" href="{{ .RelPermalink }}">
-          <span class="module-number">{{ $bn.moduleLabel.other }} {{ .Weight }}</span>
+          {{ if ne .Weight 6 }}
+            <span class="module-number">{{ $bn.moduleLabel.other }} {{ .Weight }}</span>
+          {{ else }}
+            <span class="module-number">{{ $en.assessmentLabel.other }}</span>
+          {{ end }}
           <h2>{{ .Title }}</h2>
-          <span class="module-meta">{{ (sub (len .Pages) 2) }} {{ $bn.videosLabel.other }}</span>
+          {{ if ne .Weight 6 }}
+            <span class="module-meta">{{ (sub (len .Pages) 2) }} {{ $bn.videosLabel.other }}</span>
+          {{ else }}
+            <span class="module-meta">1 quiz</span>
+          {{ end }}
           {{ with .Content }}
             <p class="module-desc">{{ . | plainify | truncate 150 }}</p>
           {{ end }}

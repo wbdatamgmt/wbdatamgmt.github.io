@@ -14,6 +14,7 @@
         <a href="{{ printf "%s/data-visualisation/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/data-visualisation" $prefix) }} class="active"{{ end }}>{{ i18n "dataVisualisation" }}</a>
         <a href="{{ printf "%s/google-forms/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/google-forms" $prefix) }} class="active"{{ end }}>{{ i18n "googleForms" }}</a>
         <a href="{{ printf "%s/google-sheets/" $prefix | relURL }}" role="menuitem"{{ if hasPrefix $current (printf "%s/google-sheets" $prefix) }} class="active"{{ end }}>{{ i18n "googleSheets" }}</a>
+        <a href="{{ printf "%s/course-end-assessment/" $prefix | relURL }}">{{ i18n "courseEndQuiz" }}</a>
       </div>
     </div>
 

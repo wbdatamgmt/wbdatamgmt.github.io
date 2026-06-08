@@ -64,6 +64,9 @@ homeAttribution:
 moduleLabel:
   other: "Module"
 
+assessmentLabel:
+  other: "Assessment"
+
 videosLabel:
   other: "videos, 1 assignment, 1 quiz"
 
@@ -90,3 +93,6 @@ googleForms:
 
 googleSheets:
   other: "Data Analysis with Google Sheets"
+
+courseEndQuiz:
+  other: "Course-end Assessment"
