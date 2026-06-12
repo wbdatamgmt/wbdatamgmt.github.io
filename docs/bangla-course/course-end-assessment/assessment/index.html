@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-in">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Data Management Course End Assessment | Basics of Data Management</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -268,16 +268,11 @@ b.	Analyze data with PivotTables
 X.	Highlight important data in spreadsheets
 d.	Apply VLOOKUP to lookup values
 </script>
+  
 
   <form id="assessment-quiz" class="assessment-quiz" novalidate></form>
 
-  <div id="assessment-result" class="assessment-result" hidden>
-    <div class="result-score">
-      <span class="score-label">Your Score</span>
-      <span class="score-value" id="score-value"></span>
-    </div>
-    <button type="button" class="btn btn-secondary" id="retry-btn">Try Again</button>
-  </div>
+  <div id="assessment-result" class="assessment-result" hidden></div>
 
   
 
@@ -302,13 +297,13 @@ d.	Apply VLOOKUP to lookup values
 <script>
 (function() {
   var raw = document.getElementById('assessment-data').textContent;
+  var hasCertificate = !!document.querySelector('meta[name="assessment-certificate"]');
 
   var questions = parseAssessment(raw);
   if (questions.length === 0) return;
 
   var quizEl = document.getElementById('assessment-quiz');
   var resultEl = document.getElementById('assessment-result');
-  var scoreEl = document.getElementById('score-value');
   var submitted = false;
 
   renderQuiz(questions, quizEl);
@@ -355,34 +350,252 @@ d.	Apply VLOOKUP to lookup values
       }
     }
 
-    scoreEl.textContent = correct + ' / ' + questions.length;
+    var passed = correct > Math.floor(questions.length / 2);
+    renderResult(correct, questions.length, passed);
+
     resultEl.hidden = false;
-    resultEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  document.getElementById('retry-btn').addEventListener('click', function() {
-    submitted = false;
-    submitBtn.disabled = false;
-    resultEl.hidden = true;
+  function renderResult(correct, total, passed) {
+    resultEl.innerHTML = '';
 
-    var inputs = quizEl.querySelectorAll('input[type="radio"], input[type="checkbox"]');
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].disabled = false;
-      inputs[i].checked = false;
+    if (passed) {
+      resultEl.classList.add('result-pass');
+      resultEl.classList.remove('result-fail');
+
+      var congrats = document.createElement('p');
+      congrats.className = 'result-congrats';
+      congrats.textContent = '🎉 Congratulations!';
+      resultEl.appendChild(congrats);
+
+      var msg = document.createElement('p');
+      msg.className = 'result-message';
+      msg.textContent = 'You have successfully passed the assessment.';
+      resultEl.appendChild(msg);
+    } else {
+      resultEl.classList.add('result-fail');
+      resultEl.classList.remove('result-pass');
     }
 
-    var cards = quizEl.querySelectorAll('.question-card');
-    for (var i = 0; i < cards.length; i++) {
-      cards[i].classList.remove('correct', 'incorrect');
+    var scoreWrap = document.createElement('div');
+    scoreWrap.className = 'result-score';
+
+    var scoreLabel = document.createElement('span');
+    scoreLabel.className = 'score-label';
+    scoreLabel.textContent = 'Your Score';
+    scoreWrap.appendChild(scoreLabel);
+
+    var scoreVal = document.createElement('span');
+    scoreVal.className = 'score-value';
+    scoreVal.textContent = correct + ' / ' + total;
+    scoreWrap.appendChild(scoreVal);
+
+    resultEl.appendChild(scoreWrap);
+
+    if (!passed) {
+      var retryMsg = document.createElement('p');
+      retryMsg.className = 'result-message';
+      retryMsg.textContent = 'Review the modules and try again — you\'re nearly there!';
+      resultEl.appendChild(retryMsg);
     }
 
-    var rows = quizEl.querySelectorAll('.option-row');
-    for (var i = 0; i < rows.length; i++) {
-      rows[i].classList.remove('answer-correct', 'answer-wrong');
-    }
+    var retryBtn = document.createElement('button');
+    retryBtn.type = 'button';
+    retryBtn.className = 'btn btn-secondary';
+    retryBtn.textContent = 'Try Again';
+    retryBtn.addEventListener('click', function() {
+      submitted = false;
+      submitBtn.disabled = false;
+      resultEl.hidden = true;
+      resultEl.classList.remove('result-pass', 'result-fail');
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+      var inputs = quizEl.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].disabled = false;
+        inputs[i].checked = false;
+      }
+
+      var cards = quizEl.querySelectorAll('.question-card');
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.remove('correct', 'incorrect');
+      }
+
+      var rows = quizEl.querySelectorAll('.option-row');
+      for (var i = 0; i < rows.length; i++) {
+        rows[i].classList.remove('answer-correct', 'answer-wrong');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    resultEl.appendChild(retryBtn);
+
+    if (passed && hasCertificate) {
+      renderCertificateForm(resultEl);
+    }
+  }
+
+  function renderCertificateForm(container) {
+    var form = document.createElement('div');
+    form.className = 'certificate-form';
+
+    var heading = document.createElement('p');
+    heading.className = 'certificate-form-heading';
+    heading.textContent = 'Download your completion certificate';
+    form.appendChild(heading);
+
+    var warning = document.createElement('p');
+    warning.className = 'cert-warning';
+    warning.textContent = '⚠ Please double-check the spelling of your name – this is exactly what will be printed on the certificate.';
+    form.appendChild(warning);
+
+    var label = document.createElement('label');
+    label.textContent = "Enter your full name as you'd like it to appear:";
+    label.style.display = 'block';
+    label.style.fontSize = '14px';
+    label.style.marginBottom = '8px';
+    label.style.color = 'var(--text)';
+    form.appendChild(label);
+
+    var row = document.createElement('div');
+    row.className = 'certificate-name-row';
+
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'certificate-name-input';
+    input.id = 'cert-name-input';
+    input.placeholder = 'e.g. Sandhya Roy or সন্ধ্যা রায়';
+    input.lang = 'und';
+    input.autocomplete = 'name';
+    row.appendChild(input);
+
+    var dlBtn = document.createElement('button');
+    dlBtn.type = 'button';
+    dlBtn.className = 'btn btn-primary';
+    dlBtn.textContent = 'Download Certificate';
+    row.appendChild(dlBtn);
+
+    form.appendChild(row);
+
+    var status = document.createElement('p');
+    status.className = 'cert-download-status';
+    form.appendChild(status);
+
+    container.appendChild(form);
+
+    dlBtn.addEventListener('click', function() {
+      var name = input.value.trim().replace(/\s+/g, ' ');
+      if (!name) {
+        input.focus();
+        status.textContent = 'Please enter your name first.';
+        status.style.color = '#dc2626';
+        return;
+      }
+      status.textContent = 'Generating certificate…';
+      status.style.color = 'var(--text-secondary)';
+
+      dlBtn.disabled = true;
+      input.disabled = true;
+
+      generateCertificate(name, function(err) {
+        if (err) {
+          status.textContent = 'Could not generate certificate. Please try again.';
+          status.style.color = '#dc2626';
+          dlBtn.disabled = false;
+          input.disabled = false;
+        } else {
+          status.textContent = '✓ Certificate downloaded! The page will refresh in a moment…';
+          status.style.color = '#15803d';
+          setTimeout(function() { window.location.reload(); }, 2000);
+        }
+      });
+    });
+
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') dlBtn.click();
+    });
+  }
+
+  function generateCertificate(name, cb) {
+    fetch('/certificate-template.svg')
+      .then(function(r) {
+        if (!r.ok) throw new Error('fetch failed');
+        return r.text();
+      })
+      .then(function(svgText) {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(svgText, 'image/svg+xml');
+
+        
+        var nameEl = doc.getElementById('learner-name');
+        if (nameEl) {
+          nameEl.setAttribute('text-anchor', 'middle');
+          var tspans = nameEl.querySelectorAll('tspan');
+          
+          if (tspans[0]) {
+            tspans[0].setAttribute('x', '0');
+            tspans[0].textContent = name;
+          }
+          
+          for (var i = 1; i < tspans.length; i++) {
+            tspans[i].parentNode.removeChild(tspans[i]);
+          }
+        }
+
+        
+        var dateEl = doc.getElementById('today-date');
+        if (dateEl) {
+          var dateTspan = dateEl.querySelector('tspan');
+          if (dateTspan) {
+            dateTspan.textContent = formatDate(new Date());
+          }
+        }
+
+        var serializer = new XMLSerializer();
+        var svgOut = serializer.serializeToString(doc);
+
+        var canvas = document.createElement('canvas');
+        canvas.width = 1600;
+        canvas.height = 1131;
+        var ctx = canvas.getContext('2d');
+
+        var img = new Image();
+        img.onload = function() {
+          ctx.drawImage(img, 0, 0, 1600, 1131);
+          var dataUrl = canvas.toDataURL('image/png');
+          var a = document.createElement('a');
+          a.href = dataUrl;
+          a.download = 'Data_Management_Certificate.png';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          cb(null);
+        };
+        img.onerror = function() { cb(new Error('image render failed')); };
+        img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgOut);
+      })
+      .catch(function(err) { cb(err); });
+  }
+
+  function formatDate(d) {
+    var months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+    var day = d.getDate();
+    var suffix;
+    if (day >= 11 && day <= 13) {
+      suffix = 'th';
+    } else {
+      switch (day % 10) {
+        case 1: suffix = 'st'; break;
+        case 2: suffix = 'nd'; break;
+        case 3: suffix = 'rd'; break;
+        default: suffix = 'th';
+      }
+    }
+    return day + suffix + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+   
 
   function parseAssessment(text) {
     var lines = text.split('\n');

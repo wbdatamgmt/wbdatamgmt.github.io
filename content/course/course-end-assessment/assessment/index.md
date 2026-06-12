@@ -6,6 +6,7 @@ showToc: false
 type: "course"
 language: "en"
 layout: "assessment"
+certificate: true
 weight: 99
 ---
 

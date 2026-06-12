@@ -273,7 +273,7 @@ p {
 
 .hero .logo {
   width: 72px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-bottom: 16px;
 }
 
@@ -942,6 +942,36 @@ h4:hover .anchor {
   background: var(--card-bg);
 }
 
+.assessment-result.result-pass {
+  background: #f0fdf4;
+  border-color: #16a34a;
+  animation: pass-pulse 1.2s ease-out;
+}
+
+.assessment-result.result-fail {
+  background: #fafafa;
+  border-color: var(--border);
+}
+
+@keyframes pass-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
+  50%  { box-shadow: 0 0 0 12px rgba(22, 163, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+}
+
+.result-congrats {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.result-message {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
 .result-score {
   display: flex;
   flex-direction: column;
@@ -961,6 +991,71 @@ h4:hover .anchor {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
+}
+
+.result-pass .score-value {
+  color: #15803d;
+}
+
+/* Certificate form */
+.certificate-form {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #bbf7d0;
+  text-align: left;
+}
+
+.certificate-form-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.cert-warning {
+  font-size: 13px;
+  color: #92400e;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.certificate-name-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.certificate-name-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 9px 12px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: var(--bg);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.certificate-name-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.certificate-name-input::placeholder {
+  color: #aaa;
+}
+
+.cert-download-status {
+  font-size: 13px;
+  color: #15803d;
+  margin-top: 8px;
+  min-height: 20px;
 }
 
 @media (max-width: 500px) {
