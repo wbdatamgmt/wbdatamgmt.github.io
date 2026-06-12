@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Data Analysis with Google Sheets on Basics of Data Management</title>
-		<link>http://localhost:1313/course/google-sheets/</link>
+		<link>https://wbdatamgmt.github.io/course/google-sheets/</link>
 		<description>Recent content in Data Analysis with Google Sheets on Basics of Data Management</description>
 		<generator>Hugo</generator>
 		<language>en-in</language>
@@ -12,40 +12,40 @@
 		
 			<lastBuildDate>Tue, 06 Jun 2023 12:45:31 +0530</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/course/google-sheets/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://wbdatamgmt.github.io/course/google-sheets/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Introduction to Google Sheets</title>
-				<link>http://localhost:1313/course/google-sheets/video-01-introduction-to-google-sheets/</link>
+				<link>https://wbdatamgmt.github.io/course/google-sheets/video-01-introduction-to-google-sheets/</link>
 				<pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
-				<guid>http://localhost:1313/course/google-sheets/video-01-introduction-to-google-sheets/</guid>
+				<guid>https://wbdatamgmt.github.io/course/google-sheets/video-01-introduction-to-google-sheets/</guid>
 				<description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/2d0iLss0WJg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;This page introduces the interface and features of Google Sheets, including creating new spreadsheets and importing data from different sources.&lt;/p&gt;&#xA;&lt;p&gt;This video serves as an introductory guide to Google Sheets for data analysis, part of the Data Management Training course. It highlights the similarities between Google Sheets and Microsoft Excel (noting that they are 99% identical) while emphasizing the unique advantages of using Google Sheets, such as its cloud-based architecture that enables real-time collaboration (1:08-1:43).&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Module 5 - 2 - Formulas and Pivot Tables in Google Sheets</title>
-				<link>http://localhost:1313/course/google-sheets/video-02-module-5-2-formulas-and-pivot-tables-in-google-sheets/</link>
+				<link>https://wbdatamgmt.github.io/course/google-sheets/video-02-module-5-2-formulas-and-pivot-tables-in-google-sheets/</link>
 				<pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
-				<guid>http://localhost:1313/course/google-sheets/video-02-module-5-2-formulas-and-pivot-tables-in-google-sheets/</guid>
+				<guid>https://wbdatamgmt.github.io/course/google-sheets/video-02-module-5-2-formulas-and-pivot-tables-in-google-sheets/</guid>
 				<description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Eu4RSoJ2yF0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;This is the second video in Module 5 - Data Analysis with Google Sheets. It shows how to use formulas and pivot tables in Google Sheets and points out some interface differences compared with Microsoft Excel.&lt;/p&gt;&#xA;&lt;p&gt;This video serves as a practical guide for users transitioning from Microsoft Excel to Google Sheets. It demonstrates how the two platforms share similar core functionalities while highlighting specific advantages of Google Sheets.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Module 5 - 3 - Collaborating on Google Sheets</title>
-				<link>http://localhost:1313/course/google-sheets/video-03-module-5-3-collaborating-on-google-sheets/</link>
+				<link>https://wbdatamgmt.github.io/course/google-sheets/video-03-module-5-3-collaborating-on-google-sheets/</link>
 				<pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
-				<guid>http://localhost:1313/course/google-sheets/video-03-module-5-3-collaborating-on-google-sheets/</guid>
+				<guid>https://wbdatamgmt.github.io/course/google-sheets/video-03-module-5-3-collaborating-on-google-sheets/</guid>
 				<description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/nK3VxSvaQTc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;This video is the final installment in the Module 5: Data Analysis with Google Sheets series.&lt;/p&gt;&#xA;&lt;p&gt;The video focuses on sharing and collaboration features. It guides viewers through the process of sharing Google Sheets files and managing access levels—Viewer, Commenter, and Editor (0:40–4:30).&lt;/p&gt;&#xA;&lt;p&gt;A significant portion of the video is dedicated to the Protect Sheets and Ranges feature (4:35–10:30). The instructor demonstrates how to:&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Data Analysis with Google Sheets Assignment</title>
-				<link>http://localhost:1313/course/google-sheets/assignment/</link>
+				<link>https://wbdatamgmt.github.io/course/google-sheets/assignment/</link>
 				<pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
-				<guid>http://localhost:1313/course/google-sheets/assignment/</guid>
+				<guid>https://wbdatamgmt.github.io/course/google-sheets/assignment/</guid>
 				<description>&lt;h2 id=&#34;school-data-with-google-sheets&#34;&gt;School Data with Google Sheets &lt;a href=&#34;#school-data-with-google-sheets&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In this assignment, you will work with Google Sheets to analyse school-level data. You will create a new Google Sheet, enter or import some basic data from the UDISE+ database for your district, use a pivot table for analysis, apply conditional formatting, and share the file with a colleague.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-1-gather-data-from-the-udise-database&#34;&gt;Step 1: Gather Data from the UDISE+ Database &lt;a href=&#34;#step-1-gather-data-from-the-udise-database&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Access the UDISE+ database for your district: &lt;a href=&#34;https://dashboard.udiseplus.gov.in/#/reportDashboard/sReport&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UDISE+ Report Dashboard&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Download or note down basic school-level data such as school name, total number of students, number of teachers, Pupil Teacher Ratio (PTR), and infrastructure details.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-2-create-a-new-google-sheet&#34;&gt;Step 2: Create a New Google Sheet &lt;a href=&#34;#step-2-create-a-new-google-sheet&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Open Google Sheets by going to sheets.google.com.&lt;/li&gt;&#xA;&lt;li&gt;Click on the &lt;strong&gt;+ Blank&lt;/strong&gt; option to create a new sheet.&lt;/li&gt;&#xA;&lt;li&gt;Name your sheet, such as &lt;strong&gt;&amp;ldquo;School Data Analysis — [Your District Name]&amp;rdquo;&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-3-enter-or-import-the-data&#34;&gt;Step 3: Enter or Import the Data &lt;a href=&#34;#step-3-enter-or-import-the-data&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;If you have the data in a file like Excel or CSV, import it by clicking on &lt;strong&gt;File &amp;gt; Import&lt;/strong&gt; and selecting your file.&lt;/li&gt;&#xA;&lt;li&gt;If you do not have a file, manually enter the data into your Google Sheet.&lt;/li&gt;&#xA;&lt;li&gt;Ensure your data is neatly organised in rows and columns.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-4-create-a-pivot-table-to-analyse-the-data&#34;&gt;Step 4: Create a Pivot Table to Analyse the Data &lt;a href=&#34;#step-4-create-a-pivot-table-to-analyse-the-data&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Highlight the data you entered, then click on &lt;strong&gt;Data &amp;gt; Pivot table&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;In the Pivot Table editor, choose how you want to analyse the data.&lt;/li&gt;&#xA;&lt;li&gt;Experiment with different arrangements to gain insights from your data.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-5-apply-conditional-formatting&#34;&gt;Step 5: Apply Conditional Formatting &lt;a href=&#34;#step-5-apply-conditional-formatting&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Highlight a column or range of data, such as Pupil Teacher Ratio.&lt;/li&gt;&#xA;&lt;li&gt;Click on &lt;strong&gt;Format &amp;gt; Conditional formatting&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Set a rule to highlight cells based on their value.&lt;/li&gt;&#xA;&lt;li&gt;Apply the formatting and see how it visually categorises your data.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-6-collaborate-by-sharing-the-google-sheet&#34;&gt;Step 6: Collaborate by Sharing the Google Sheet &lt;a href=&#34;#step-6-collaborate-by-sharing-the-google-sheet&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Click on the &lt;strong&gt;Share&lt;/strong&gt; button at the top right of the screen.&lt;/li&gt;&#xA;&lt;li&gt;Enter the email address of a colleague to share the sheet with them.&lt;/li&gt;&#xA;&lt;li&gt;Set the appropriate permissions and send the invitation.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>Data Analysis with Google Sheets - Quiz</title>
-				<link>http://localhost:1313/course/google-sheets/assessment/</link>
+				<link>https://wbdatamgmt.github.io/course/google-sheets/assessment/</link>
 				<pubDate>Tue, 06 Jun 2023 12:45:31 +0530</pubDate>
-				<guid>http://localhost:1313/course/google-sheets/assessment/</guid>
+				<guid>https://wbdatamgmt.github.io/course/google-sheets/assessment/</guid>
 				<description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What is the primary use of Google Sheets?&#xA;a. To create presentations&#xA;b. To design graphics&#xA;X. To create and manage spreadsheets&#xA;d. To edit videos&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;How can you quickly fill a series of cells with the same data in Google Sheets?&#xA;X. By using the drag handle (fill handle) from the corner of the cell&#xA;b. By copying and pasting each cell&#xA;c. By typing in each cell individually&#xA;d. By pressing the Enter key repeatedly&lt;/p&gt;</description>
 			</item>
 	</channel>
