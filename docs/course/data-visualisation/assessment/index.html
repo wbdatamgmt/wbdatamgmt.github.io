@@ -475,6 +475,11 @@ d. Use appropriate scale for the axis
           dlBtn.disabled = false;
           input.disabled = false;
         } else {
+          if (window.goatcounter && window.goatcounter.count) {
+            window.goatcounter.count({
+              path: window.location.pathname + 'download-certificate'
+            });
+          }
           status.textContent = '✓ Certificate downloaded! The page will refresh in a moment…';
           status.style.color = '#15803d';
           setTimeout(function() { window.location.reload(); }, 2000);
